@@ -15,4 +15,12 @@ const reverseSeq = (n) => {
   return arr;
 };
 
-console.log(reverseSeq(5)); // [5, 4, 3, 2, 1]
+var summation = function (num) {
+  let number = 0;
+  for (let i = 1; i <= num; i++) {
+    number += i;
+  }
+  return number;
+};
+
+console.log(summation(5)); // 15
