@@ -77,4 +77,13 @@ function rowSumOddNumbers(n) {
   return sum;
 }
 
-console.log(rowSumOddNumbers(13)); // 2197
+function longest(s1, s2) {
+  let newStr = s1 + s2;
+  return newStr
+    .split("")
+    .sort()
+    .filter((l, i, arr) => i === arr.lastIndexOf(l))
+    .join("");
+}
+
+console.log(longest("aretheyhere", "yestheyarehere")); // "aehrsty"
