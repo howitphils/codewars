@@ -62,4 +62,19 @@ function positiveSum(arr) {
 function basicOp(operation, value1, value2) {
   return eval(`${value1}${operation}${value2}`);
 }
-console.log(basicOp("+", 1, 2)); // 20
+
+function rowSumOddNumbers(n) {
+  let sum = 0;
+  let lastNumber = 1;
+  for (let i = 1; i <= n; i++) {
+    for (let j = 0; j < i; j++) {
+      if (i === n) {
+        sum += lastNumber;
+      }
+      lastNumber += 2;
+    }
+  }
+  return sum;
+}
+
+console.log(rowSumOddNumbers(13)); // 2197
