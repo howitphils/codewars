@@ -86,4 +86,20 @@ function longest(s1, s2) {
     .join("");
 }
 
-console.log(longest("aretheyhere", "yestheyarehere")); // "aehrsty"
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .reverse()
+    .join(" ");
+}
+
+function makeNegative(num) {
+  return num > 0 ? -num : num;
+}
+
+function friend(friends) {
+  return friends.filter((friend) => friend.length === 4);
+}
+
+console.log(friend(["Ryan", "Kieran", "Mark"])); // ["Ryan", "Mark"]
