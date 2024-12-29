@@ -102,4 +102,16 @@ function friend(friends) {
   return friends.filter((friend) => friend.length === 4);
 }
 
-console.log(friend(["Ryan", "Kieran", "Mark"])); // ["Ryan", "Mark"]
+function getSum(a, b) {
+  let sum = 0;
+  for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+function past(h, m, s) {
+  return h * 3600000 + m * 60000 + s * 1000;
+}
+
+console.log(past(0, 1, 1)); // 61000
