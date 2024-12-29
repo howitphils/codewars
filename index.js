@@ -122,6 +122,8 @@ function findNeedle(haystack) {
   return `found the needle at position ${haystack.indexOf("needle")}`;
 }
 
-console.log(
-  findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
-); // 61000
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9;
+}
+
+console.log(simpleMultiplication(2));
