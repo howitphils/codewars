@@ -138,4 +138,9 @@ function squareDigits(num) {
     .join("");
 }
 
+function highAndLow(numbers){
+  const newNumbers = numbers.split(' ').map(n => parseInt(n)).sort((a,b) => a - b)
+  return `${newNumbers[newNumbers.length - 1]} ${newNumbers[0]}`
+}
+
 console.log(simpleMultiplication(2));
