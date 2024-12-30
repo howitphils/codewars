@@ -126,4 +126,8 @@ function simpleMultiplication(number) {
   return number % 2 === 0 ? number * 8 : number * 9;
 }
 
+function descord(n) {
+  return Number(n.toString().split("").sort().reverse().join(""));
+}
+
 console.log(simpleMultiplication(2));
