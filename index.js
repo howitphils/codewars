@@ -130,4 +130,12 @@ function descord(n) {
   return Number(n.toString().split("").sort().reverse().join(""));
 }
 
+function squareDigits(num) {
+  return +num
+    .toString()
+    .split("")
+    .map((n) => parseInt(n) ** 2)
+    .join("");
+}
+
 console.log(simpleMultiplication(2));
