@@ -143,4 +143,9 @@ function highAndLow(numbers){
   return `${newNumbers[newNumbers.length - 1]} ${newNumbers[0]}`
 }
 
+function paperwork(n, m) {
+  if (n < 0 || m < 0) return 0
+  return n * m
+}
+
 console.log(simpleMultiplication(2));
