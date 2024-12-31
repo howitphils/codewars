@@ -138,14 +138,27 @@ function squareDigits(num) {
     .join("");
 }
 
-function highAndLow(numbers){
-  const newNumbers = numbers.split(' ').map(n => parseInt(n)).sort((a,b) => a - b)
-  return `${newNumbers[newNumbers.length - 1]} ${newNumbers[0]}`
+function highAndLow(numbers) {
+  const newNumbers = numbers
+    .split(" ")
+    .map((n) => parseInt(n))
+    .sort((a, b) => a - b);
+  return `${newNumbers[newNumbers.length - 1]} ${newNumbers[0]}`;
 }
 
 function paperwork(n, m) {
-  if (n < 0 || m < 0) return 0
-  return n * m
+  if (n < 0 || m < 0) return 0;
+  return n * m;
+}
+
+function countBy(x, n) {
+  let z = [];
+  let b = x;
+  for (let i = 0; i < n; i++) {
+    z.push(b);
+    b += x;
+  }
+  return z;
 }
 
 console.log(simpleMultiplication(2));
