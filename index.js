@@ -203,4 +203,8 @@ const binaryArrayToNumber = (arr) => {
   return parseInt(arr.join(""), 2);
 };
 
-console.log(binaryArrayToNumber([1, 1, 1, 1]));
+function minMax(arr) {
+  return [Math.min(...arr), Math.max(...arr)]; // fix me!
+}
+
+console.log(minMax([1, 2, 3, 4, 5]));
