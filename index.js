@@ -175,4 +175,8 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
+function smash(words) {
+  return words.join(" ");
+}
+
 console.log(stringToArray("I love arrays they are my favorite"));
