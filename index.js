@@ -179,4 +179,24 @@ function smash(words) {
   return words.join(" ");
 }
 
-console.log(stringToArray("I love arrays they are my favorite"));
+function XO(str) {
+  let x = 0;
+  let o = 0;
+  str.split("").forEach((l) => {
+    if (l.toLowerCase() === "x") {
+      x += 1;
+    } else if (l.toLowerCase() === "o") {
+      o += 1;
+    }
+  });
+  return x === o;
+}
+
+function betterThanAverage(classPoints, yourPoints) {
+  return (
+    classPoints.reduce((acc, curr) => acc + curr, 0) / classPoints.length <
+    yourPoints
+  );
+}
+
+console.log(XO("ooxx"));
