@@ -161,14 +161,18 @@ function countBy(x, n) {
   return z;
 }
 
-var min = function(list){
-  list.sort((a,b) => a - b)
+var min = function (list) {
+  list.sort((a, b) => a - b);
   return list[0];
+};
+
+var max = function (list) {
+  list.sort((a, b) => b - a);
+  return list[0];
+};
+
+function stringToArray(string) {
+  return string.split(" ");
 }
 
-var max = function(list){
-  list.sort((a,b) => b - a)
-  return list[0];
-}
-
-console.log(simpleMultiplication(2));
+console.log(stringToArray("I love arrays they are my favorite"));
