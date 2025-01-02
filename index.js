@@ -219,5 +219,8 @@ function validatePIN(pin) {
 function findShort(s) {
   return s.split(" ").sort((a, b) => a.length - b.length)[0].length;
 }
+function sumMix(x) {
+  return x.map(Number).reduce((acc, curr) => acc + curr, 0);
+}
 
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+console.log(sumMix([9, 3, "7", "3"]));
