@@ -207,4 +207,13 @@ function minMax(arr) {
   return [Math.min(...arr), Math.max(...arr)]; // fix me!
 }
 
-console.log(minMax([1, 2, 3, 4, 5]));
+function validatePIN(pin) {
+  if (pin.match(/\s/)) return false;
+  if (pin.length !== 4 && pin.length !== 6) {
+    return false;
+  }
+  return !pin.split("").map(Number).includes(NaN);
+  //return true or false
+}
+
+console.log(validatePIN("123 "));
