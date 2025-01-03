@@ -223,4 +223,8 @@ function sumMix(x) {
   return x.map(Number).reduce((acc, curr) => acc + curr, 0);
 }
 
-console.log(sumMix([9, 3, "7", "3"]));
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
+
+console.log(disemvowel("This website is for losers LOL!"));
