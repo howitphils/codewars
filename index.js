@@ -231,13 +231,7 @@ function duplicateEncode(word) {
   return word
     .toLowerCase()
     .split("")
-    .map((l, i, arr) => {
-      if (arr.indexOf(l) === arr.lastIndexOf(l)) {
-        return "(";
-      } else {
-        return ")";
-      }
-    })
+    .map((l) => (word.indexOf(l) === word.lastIndexOf(l) ? "(" : ")"))
     .join("");
 }
 
