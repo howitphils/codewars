@@ -227,4 +227,18 @@ function disemvowel(str) {
   return str.replace(/[aeiou]/gi, "");
 }
 
-console.log(disemvowel("This website is for losers LOL!"));
+function duplicateEncode(word) {
+  return word
+    .toLowerCase()
+    .split("")
+    .map((l, i, arr) => {
+      if (arr.indexOf(l) === arr.lastIndexOf(l)) {
+        return "(";
+      } else {
+        return ")";
+      }
+    })
+    .join("");
+}
+
+console.log(duplicateEncode("din"));
