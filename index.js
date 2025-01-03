@@ -243,4 +243,13 @@ function accum(s) {
     .join("-");
 }
 
-console.log(accum("abcd"));
+function expandedForm(num) {
+  return num
+    .toString()
+    .split("")
+    .map((n, i, arr) => Number(n + "0".repeat(arr.length - 1 - i)))
+    .filter((n) => n !== 0)
+    .join(" + ");
+}
+
+console.log(expandedForm(12345));
