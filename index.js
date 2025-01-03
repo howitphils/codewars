@@ -235,4 +235,12 @@ function duplicateEncode(word) {
     .join("");
 }
 
-console.log(duplicateEncode("din"));
+function accum(s) {
+  return s
+    .toLowerCase()
+    .split("")
+    .map((l, i) => l.toUpperCase() + l.repeat(i))
+    .join("-");
+}
+
+console.log(accum("abcd"));
