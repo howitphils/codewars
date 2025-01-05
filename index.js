@@ -315,4 +315,17 @@ function setAlarm(employed, vacation) {
   return false;
 }
 
-console.log(removeSmallest([2, 3, 1, 4]));
+function solution(string) {
+  const target = string.split("").filter((l) => l !== l.toLowerCase());
+  return string
+    .split("")
+    .map((l) => {
+      if (target.includes(l)) {
+        return ` ${l}`;
+      }
+      return l;
+    })
+    .join("");
+}
+
+console.log(solution("hiHheEo"));
