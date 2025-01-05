@@ -316,11 +316,10 @@ function setAlarm(employed, vacation) {
 }
 
 function solution(string) {
-  const target = string.split("").filter((l) => l !== l.toLowerCase());
   return string
     .split("")
     .map((l) => {
-      if (target.includes(l)) {
+      if (l !== l.toLowerCase()) {
         return ` ${l}`;
       }
       return l;
