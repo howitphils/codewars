@@ -299,4 +299,10 @@ function cockroachSpeed(s) {
   //Good Luck!
 }
 
-console.log(cockroachSpeed(1.292));
+function removeSmallest(numbers) {
+  if (!numbers.length) return [];
+  const smallest = [...numbers].sort((a, b) => a - b).shift();
+  return numbers.filter((n, i, arr) => i !== arr.indexOf(smallest));
+}
+
+console.log(removeSmallest([2, 3, 1, 4]));
