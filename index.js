@@ -290,4 +290,9 @@ function enough(cap, on, wait) {
   return on + wait > cap ? on + wait - cap : 0;
 }
 
-console.log(enough(100, 60, 50));
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - sonYearsOld * 2);
+  // your code here
+}
+
+console.log(twiceAsOld(42, 21));
