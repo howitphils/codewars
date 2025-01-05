@@ -285,8 +285,9 @@ function countPositivesSumNegatives(input) {
   return [count, sum];
 }
 
-console.log(
-  countPositivesSumNegatives([
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
-  ])
-);
+function enough(cap, on, wait) {
+  // your code here
+  return on + wait > cap ? on + wait - cap : 0;
+}
+
+console.log(enough(100, 60, 50));
