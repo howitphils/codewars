@@ -294,5 +294,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - sonYearsOld * 2);
   // your code here
 }
+function cockroachSpeed(s) {
+  return Math.floor((s * 100000) / 3600);
+  //Good Luck!
+}
 
-console.log(twiceAsOld(42, 21));
+console.log(cockroachSpeed(1.292));
