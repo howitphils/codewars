@@ -347,4 +347,9 @@ function bmi(weight, height) {
   }
 }
 
-console.log(bmi(200, 1.8));
+function hero(bullets, dragons) {
+  //Get Coding!
+  return dragons * 2 <= bullets;
+}
+
+console.log(hero(10, 5));
