@@ -356,4 +356,9 @@ function evenOrOdd(number) {
   return number % 2 === 0 ? "Even" : "Odd";
 }
 
-console.log(evenOrOdd(8));
+const stringToNumber = function (str) {
+  // put your code here
+  return Number(str);
+};
+
+console.log(stringToNumber("8"));
