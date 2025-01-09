@@ -334,4 +334,17 @@ function hoopCount(n) {
     : "Keep at it until you get it";
 }
 
-console.log(hoopCount(2));
+function bmi(weight, height) {
+  const calc = weight / height ** 2;
+  if (calc <= 18.5) {
+    return "Underweight";
+  } else if (calc <= 25) {
+    return "Normal";
+  } else if (calc <= 30) {
+    return "Overweight";
+  } else {
+    return "Obese";
+  }
+}
+
+console.log(bmi(200, 1.8));
