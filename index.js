@@ -352,4 +352,8 @@ function hero(bullets, dragons) {
   return dragons * 2 <= bullets;
 }
 
-console.log(hero(10, 5));
+function evenOrOdd(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
+}
+
+console.log(evenOrOdd(8));
