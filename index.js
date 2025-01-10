@@ -376,4 +376,9 @@ function getAge(inputString) {
   return Number(inputString.split(" ")[0]);
 }
 
-console.log(isIsogram("dzxcvbnm"));
+function checkForFactor(base, factor) {
+  // code here
+  return base % factor === 0;
+}
+
+console.log(checkForFactor(10, 8));
