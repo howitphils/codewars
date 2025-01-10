@@ -405,4 +405,22 @@ var number = function (array) {
   return array.map((l, i) => `${i + 1}: ${l}`);
 };
 
-console.log(number(["a", "b", "c"]));
+function sumDigPow(a, b) {
+  // Your code here
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    if (i < 10) {
+      arr.push(i);
+    } else {
+      const sum = String(i)
+        .split("")
+        .reduce((acc, curr, i) => acc + Number(curr) ** (i + 1), 0);
+      if (i === sum) {
+        arr.push(i);
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(sumDigPow(1, 100));
