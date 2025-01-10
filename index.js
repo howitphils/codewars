@@ -394,4 +394,10 @@ function strCount(str, letter) {
   return str.split("").filter((l) => l === letter).length;
 }
 
-console.log(powersOfTwo(3));
+String.prototype.toJadenCase = function () {
+  return this.split(" ")
+    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .join(" ");
+};
+
+console.log("Hello world".toJadenCase());
