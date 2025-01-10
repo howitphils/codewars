@@ -423,4 +423,9 @@ function sumDigPow(a, b) {
   return arr;
 }
 
-console.log(sumDigPow(1, 100));
+function isPalindrome(x) {
+  return x.toLowerCase().split("").reverse().join("") === x.toLowerCase();
+  // your code here
+}
+
+console.log(isPalindrome("racecar"));
