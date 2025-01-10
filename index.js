@@ -389,4 +389,9 @@ function powersOfTwo(n) {
   return arr;
 }
 
+function strCount(str, letter) {
+  //code here
+  return str.split("").filter((l) => l === letter).length;
+}
+
 console.log(powersOfTwo(3));
