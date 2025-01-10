@@ -361,4 +361,14 @@ const stringToNumber = function (str) {
   return Number(str);
 };
 
-console.log(stringToNumber("8"));
+function isIsogram(str) {
+  //...
+  return (
+    str
+      .toLowerCase()
+      .split("")
+      .findIndex((l, i, arr) => arr.indexOf(l) !== arr.lastIndexOf(l)) === -1
+  );
+}
+
+console.log(isIsogram("dzxcvbnm"));
