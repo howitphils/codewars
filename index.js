@@ -428,4 +428,8 @@ function isPalindrome(x) {
   // your code here
 }
 
+function twoSort(s) {
+  return s.sort()[0].split("").join("***");
+}
+
 console.log(isPalindrome("racecar"));
