@@ -381,4 +381,12 @@ function checkForFactor(base, factor) {
   return base % factor === 0;
 }
 
-console.log(checkForFactor(10, 8));
+function powersOfTwo(n) {
+  let arr = [];
+  for (let i = 0; i <= n; i++) {
+    arr.push(2 ** i);
+  }
+  return arr;
+}
+
+console.log(powersOfTwo(3));
