@@ -400,4 +400,9 @@ String.prototype.toJadenCase = function () {
     .join(" ");
 };
 
-console.log("Hello world".toJadenCase());
+var number = function (array) {
+  //your awesome code here
+  return array.map((l, i) => `${i + 1}: ${l}`);
+};
+
+console.log(number(["a", "b", "c"]));
