@@ -432,4 +432,19 @@ function twoSort(s) {
   return s.sort()[0].split("").join("***");
 }
 
-console.log(isPalindrome("racecar"));
+function SeriesSum(n) {
+  // Happy Coding ^_^
+  let sum = 0;
+  let addition = 4;
+  for (let i = 0; i < n; i++) {
+    if (i === 0) {
+      sum += 1;
+    } else {
+      sum += 1 / addition;
+      addition += 3;
+    }
+  }
+  return sum.toFixed(2);
+}
+
+console.log(SeriesSum(1));
