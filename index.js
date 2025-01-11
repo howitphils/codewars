@@ -434,17 +434,22 @@ function twoSort(s) {
 
 function SeriesSum(n) {
   // Happy Coding ^_^
-  let sum = 0;
-  let addition = 4;
-  for (let i = 0; i < n; i++) {
-    if (i === 0) {
-      sum += 1;
-    } else {
-      sum += 1 / addition;
-      addition += 3;
-    }
+  // let sum = 0;
+  // let addition = 4;
+  // for (let i = 0; i < n; i++) {
+  //   if (i === 0) {
+  //     sum += 1;
+  //   } else {
+  //     sum += 1 / addition;
+  //     addition += 3;
+  //   }
+  // }
+  // return sum.toFixed(2);
+  for (var s = 0, i = 0; i < n; i++) {
+    s += 1 / (1 + i * 3);
   }
-  return sum.toFixed(2);
+
+  return s.toFixed(2);
 }
 
 console.log(SeriesSum(1));
