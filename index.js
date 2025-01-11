@@ -459,4 +459,8 @@ function sum(arr) {
     .reduce((acc, curr) => acc + curr, 0);
 }
 
-console.log(sum([5, 2, 3, 4, 1, 8]));
+function stray(numbers) {
+  return numbers.find((n, i, arr) => arr.indexOf(n) === arr.lastIndexOf(n));
+}
+
+console.log(stray([1, 1, 2]));
