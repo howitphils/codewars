@@ -452,4 +452,11 @@ function SeriesSum(n) {
   return s.toFixed(2);
 }
 
-console.log(SeriesSum(1));
+function sum(arr) {
+  return arr
+    .sort((a, b) => a - b)
+    .slice(1, -1)
+    .reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(sum([5, 2, 3, 4, 1, 8]));
