@@ -463,4 +463,12 @@ function stray(numbers) {
   return numbers.find((n, i, arr) => arr.indexOf(n) === arr.lastIndexOf(n));
 }
 
-console.log(stray([1, 1, 2]));
+function between(a, b) {
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+
+console.log(between(1, 4));
