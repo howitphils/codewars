@@ -493,4 +493,12 @@ function twoSum(numbers, target) {
   }
 }
 
-console.log(twoSum([1, 2, 3], 4)); // [0,2];
+var uniqueInOrder = function (iterable) {
+  if (typeof iterable === "string") {
+    iterable = iterable.split("");
+  }
+  return iterable.filter((l, i, arr) => l !== arr[i + 1]);
+  //your code here - remember iterable can be a string or an array
+};
+
+console.log(uniqueInOrder("AABBCCddcDr")); // [0,2];
