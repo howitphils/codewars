@@ -471,4 +471,8 @@ function between(a, b) {
   return arr;
 }
 
-console.log(between(1, 4));
+function check(a, x) {
+  return a.includes(x);
+}
+
+console.log(check([66, 101], 66));
