@@ -494,10 +494,10 @@ function twoSum(numbers, target) {
 }
 
 var uniqueInOrder = function (iterable) {
-  if (typeof iterable === "string") {
-    iterable = iterable.split("");
-  }
-  return iterable.filter((l, i, arr) => l !== arr[i + 1]);
+  // if (typeof iterable === "string") {
+  //   iterable = iterable.split("");
+  // }
+  return [...iterable].filter((l, i, arr) => l !== arr[i + 1]);
   //your code here - remember iterable can be a string or an array
 };
 
