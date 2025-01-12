@@ -482,18 +482,15 @@ function updateLight(current) {
 }
 
 function twoSum(numbers, target) {
-  let arr = [];
   for (let i = 0; i < numbers.length; i++) {
     for (let j = 0; j < numbers.length; j++) {
       if (i === j) {
         continue;
       } else if (numbers[i] + numbers[j] === target) {
-        arr.push(i);
-        arr.push(j);
+        return [i, j];
       }
     }
   }
-  return arr;
 }
 
 console.log(twoSum([1, 2, 3], 4)); // [0,2];
