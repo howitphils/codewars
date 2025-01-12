@@ -475,4 +475,10 @@ function check(a, x) {
   return a.includes(x);
 }
 
-console.log(check([66, 101], 66));
+function updateLight(current) {
+  let arr = ["green", "yellow", "red"];
+  let index = arr.indexOf(current);
+  return index === arr.length - 1 ? arr[0] : arr[index + 1];
+}
+
+console.log(updateLight("green"));
