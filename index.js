@@ -523,10 +523,8 @@ function saleHotdogs(n) {
   }
 }
 
-console.log(
-  openOrSenior([
-    [18, 20],
-    [19, 27],
-    [76, 21],
-  ])
-); // dASZdAD
+function unusualFive() {
+  return ["a", "b", "c", "d", "e"].length;
+}
+
+console.log(unusualFive()); // 5
