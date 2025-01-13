@@ -498,7 +498,12 @@ var uniqueInOrder = function (iterable) {
   //   iterable = iterable.split("");
   // }
   return [...iterable].filter((l, i, arr) => l !== arr[i + 1]);
-  //your code here - remember iterable can be a string or an array
 };
 
-console.log(uniqueInOrder("AABBCCddcDr")); // [0,2];
+String.prototype.toAlternatingCase = function () {
+  return this.split("")
+    .map((l) => (l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()))
+    .join("");
+};
+
+console.log("DaszDad".toAlternatingCase()); // dASZdAD
