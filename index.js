@@ -547,4 +547,15 @@ function correct(string) {
     .join("");
 }
 
-console.log(correct("L0ND0N")); // [1, 3]
+function sortArray(array) {
+  const sortedOdds = array.filter((n) => n % 2 !== 0).sort((a, b) => a - b);
+  return array.map((n) => {
+    if (n % 2 !== 0) {
+      return sortedOdds.shift();
+    }
+    return n;
+  });
+  // Return a sorted array.
+}
+
+console.log(sortArray([2, 5, 3, 1, 4, 5, 2])); // []
