@@ -527,4 +527,8 @@ function unusualFive() {
   return ["a", "b", "c", "d", "e"].length;
 }
 
-console.log(unusualFive()); // 5
+function removeEveryOther(arr) {
+  return arr.filter((a, i, arr) => i % 2 === 0);
+}
+
+console.log(removeEveryOther([1, 2, 3])); // [1, 3]
