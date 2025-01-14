@@ -531,4 +531,20 @@ function removeEveryOther(arr) {
   return arr.filter((a, i, arr) => i % 2 === 0);
 }
 
-console.log(removeEveryOther([1, 2, 3])); // [1, 3]
+function correct(string) {
+  return string
+    .split("")
+    .map((l) => {
+      if (l === "5") {
+        return "S";
+      } else if (l === "0") {
+        return "O";
+      } else if (l === "1") {
+        return "I";
+      }
+      return l;
+    })
+    .join("");
+}
+
+console.log(correct("L0ND0N")); // [1, 3]
