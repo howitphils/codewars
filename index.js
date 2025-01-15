@@ -572,4 +572,14 @@ function addBinary(a, b) {
   return (a + b).toString(2);
 }
 
-console.log(addBinary(1, 2)); //
+const sequenceSum = (begin, end, step) => {
+  if (begin > end) return 0;
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) {
+    sum += i;
+  }
+  return sum;
+  // May the Force be with you
+};
+
+console.log(sequenceSum(1, 3, 1)); //
