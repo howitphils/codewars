@@ -595,4 +595,9 @@ var isAnagram = function (test, original) {
   );
 };
 
-console.log(isAnagram("asdsad", "qwead")); //
+function gimme(triplet) {
+  const target = [...triplet].sort((a, b) => a - b)[1];
+  return triplet.indexOf(target);
+}
+
+console.log(gimme([6, 8, 4])); //
