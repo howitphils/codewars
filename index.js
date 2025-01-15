@@ -582,4 +582,9 @@ const sequenceSum = (begin, end, step) => {
   // May the Force be with you
 };
 
-console.log(sequenceSum(1, 3, 1)); //
+function expressionMatter(a, b, c) {
+  return Math.max(a * (b + c), a * b * c, a + b * c, (a + b) * c, a + b + c);
+  return; // highest achievable result
+}
+
+console.log(expressionMatter(1, 2, 3)); //
