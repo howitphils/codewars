@@ -600,4 +600,8 @@ function gimme(triplet) {
   return triplet.indexOf(target);
 }
 
-console.log(gimme([6, 8, 4])); //
+function getCount(str) {
+  return str.split("").filter((l) => /^[aeiou]$/i.test(l)).length;
+}
+
+console.log(getCount("axczadsqe2 ads ")); //
