@@ -604,4 +604,10 @@ function getCount(str) {
   return str.split("").filter((l) => /^[aeiou]$/i.test(l)).length;
 }
 
-console.log(getCount("axczadsqe2 ads ")); //
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  if (Math.sqrt(sq) !== Math.floor(Math.sqrt(sq))) return -1;
+  return Math.pow(Math.sqrt(sq) + 1, 2);
+}
+
+console.log(findNextSquare(113)); //
