@@ -564,14 +564,8 @@ function gooseFilter(birds) {
   // return an array containing all of the strings in the input array except those that match strings in geese
 }
 
-console.log(
-  gooseFilter([
-    "Mallard",
-    "Hook Bill",
-    "African",
-    "Crested",
-    "Pilgrim",
-    "Toulouse",
-    "Blue Swedish",
-  ])
-); //
+function reverseList(list) {
+  return list.reverse();
+}
+
+console.log(reverseList([1, 2, 3, 4, 5])); //
