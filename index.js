@@ -568,4 +568,8 @@ function reverseList(list) {
   return list.reverse();
 }
 
-console.log(reverseList([1, 2, 3, 4, 5])); //
+function addBinary(a, b) {
+  return (a + b).toString(2);
+}
+
+console.log(addBinary(1, 2)); //
