@@ -622,4 +622,9 @@ function grow(x) {
   return x.reduce((acc, curr) => acc * curr);
 }
 
-console.log(grow([1, 2, 3])); //
+function findDifference(a, b) {
+  return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
+  //loading...
+}
+
+console.log(findDifference([1, 2, 3], [2, 4, 5])); //
