@@ -610,4 +610,12 @@ function findNextSquare(sq) {
   return Math.pow(Math.sqrt(sq) + 1, 2);
 }
 
-console.log(findNextSquare(113)); //
+function doubleChar(str) {
+  return str
+    .split("")
+    .map((l) => `${l}${l}`)
+    .join("");
+  // Your code here
+}
+
+console.log(doubleChar("Aha")); //
