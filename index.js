@@ -627,4 +627,9 @@ function findDifference(a, b) {
   //loading...
 }
 
-console.log(findDifference([1, 2, 3], [2, 4, 5])); //
+function century(year) {
+  // Finish this :)
+  return Math.ceil(year / 100);
+}
+
+console.log(century(1901)); //
