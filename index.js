@@ -618,4 +618,8 @@ function doubleChar(str) {
   // Your code here
 }
 
-console.log(doubleChar("Aha")); //
+function grow(x) {
+  return x.reduce((acc, curr) => acc * curr);
+}
+
+console.log(grow([1, 2, 3])); //
