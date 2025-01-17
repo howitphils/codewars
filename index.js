@@ -653,4 +653,9 @@ function peopleWithAgeDrink(old) {
   }
 }
 
-console.log(peopleWithAgeDrink(10)); //
+function move(position, roll) {
+  return position + roll * 2;
+  // return the new position
+}
+
+console.log(move(1, 3)); //
