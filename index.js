@@ -632,4 +632,13 @@ function century(year) {
   return Math.ceil(year / 100);
 }
 
-console.log(century(1901)); //
+function roundToNext5(n) {
+  // ...
+  let b = n;
+  while (b % 5 !== 0) {
+    b += 1;
+  }
+  return b;
+}
+
+console.log(roundToNext5(-2)); //
