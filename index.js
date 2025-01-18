@@ -689,4 +689,11 @@ function sayHello(name) {
   return `Hello, ${name}`;
 }
 
-console.log(sayHello("hi")); //
+function position(letter) {
+  return `Position of alphabet: ${
+    "abcdefghijklmnopqrstuvwxyz".indexOf(letter) + 1
+  }`;
+  //Write your own Code!
+}
+
+console.log(position("b")); //
