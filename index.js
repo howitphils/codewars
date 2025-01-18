@@ -658,4 +658,22 @@ function move(position, roll) {
   // return the new position
 }
 
-console.log(move(1, 3)); //
+function arithmetic(a, b, operator) {
+  //your code here!
+  switch (operator) {
+    case "add": {
+      return a + b;
+    }
+    case "subtract": {
+      return a - b;
+    }
+    case "multiply": {
+      return a * b;
+    }
+    case "divide": {
+      return a / b;
+    }
+  }
+}
+
+console.log(arithmetic(1, 3, "divide")); //
