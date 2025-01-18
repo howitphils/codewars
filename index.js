@@ -681,8 +681,8 @@ function duplicateCount(text) {
   return text
     .toLowerCase()
     .split("")
-    .filter((l, i, arr) => i !== arr.lastIndexOf(l))
-    .filter((l, i, arr) => i === arr.lastIndexOf(l)).length;
+    .filter((l, i, arr) => arr.indexOf(l) === i && arr.lastIndexOf(l) !== i)
+    .length;
 }
 
 console.log(duplicateCount("aavcdasqe")); //
