@@ -711,4 +711,14 @@ function count(string) {
   return obj;
 }
 
-console.log(count("bbcada")); //
+function order(words) {
+  let arr = [];
+  words.split(" ").forEach((word) => {
+    const index = Number(word.split("").filter(Number)[0]) - 1;
+    arr[index] = word;
+  });
+  return arr.join(" ");
+  // ...
+}
+
+console.log(order("Hi2 friends1 of4 mine3")); //
