@@ -721,4 +721,9 @@ function order(words) {
   // ...
 }
 
-console.log(order("Hi2 friends1 of4 mine3")); //
+function combat(health, damage) {
+  return health - damage < 0 ? 0 : health - damage;
+  // Write your code here
+}
+
+console.log(combat(10, 20)); //
