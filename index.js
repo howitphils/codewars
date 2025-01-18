@@ -696,4 +696,19 @@ function position(letter) {
   //Write your own Code!
 }
 
-console.log(position("b")); //
+function count(string) {
+  // TODO
+  let obj = {};
+
+  string.split("").forEach((l) => {
+    if (obj[l]) {
+      obj[l] = obj[l] + 1;
+    } else {
+      obj[l] = 1;
+    }
+  });
+
+  return obj;
+}
+
+console.log(count("bbcada")); //
