@@ -676,4 +676,13 @@ function arithmetic(a, b, operator) {
   }
 }
 
-console.log(arithmetic(1, 3, "divide")); //
+function duplicateCount(text) {
+  //...
+  return text
+    .toLowerCase()
+    .split("")
+    .filter((l, i, arr) => i !== arr.lastIndexOf(l))
+    .filter((l, i, arr) => i === arr.lastIndexOf(l)).length;
+}
+
+console.log(duplicateCount("aavcdasqe")); //
