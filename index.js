@@ -685,4 +685,8 @@ function duplicateCount(text) {
     .length;
 }
 
-console.log(duplicateCount("aavcdasqe")); //
+function sayHello(name) {
+  return `Hello, ${name}`;
+}
+
+console.log(sayHello("hi")); //
