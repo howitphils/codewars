@@ -762,4 +762,9 @@ function findAverage(array) {
   return array.reduce((acc, curr) => acc + curr, 0) / array.length;
 }
 
-console.log(findAverage([2, 3, 4])); //
+function getVolumeOfCuboid(length, width, height) {
+  // your code here
+  return length * width * height;
+}
+
+console.log(getVolumeOfCuboid(1, 2, 3)); //
