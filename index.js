@@ -744,4 +744,11 @@ const areaOrPerimeter = function (l, w) {
   // Return your answer
 };
 
-console.log(areaOrPerimeter(3, 7)); //
+function warnTheSheep(queue) {
+  const targetIndex = queue.reverse().findIndex((item) => item === "wolf");
+  return targetIndex === 0
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${targetIndex}! You are about to be eaten by a wolf!`;
+}
+
+console.log(warnTheSheep(["sheep", "wolf"])); //
