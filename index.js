@@ -771,4 +771,11 @@ function litres(time) {
   return Math.floor(time / 2);
 }
 
-console.log(litres(4)); //
+function sumDigits(number) {
+  return String(Math.abs(number))
+    .split("")
+    .map(Number)
+    .reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(sumDigits(-34)); //
