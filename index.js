@@ -726,4 +726,9 @@ function combat(health, damage) {
   // Write your code here
 }
 
-console.log(combat(10, 20)); //
+function getChar(c) {
+  return String.fromCharCode(c);
+  // ...
+}
+
+console.log(getChar(22)); //
