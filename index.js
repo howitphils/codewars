@@ -751,4 +751,9 @@ function warnTheSheep(queue) {
     : `Oi! Sheep number ${targetIndex}! You are about to be eaten by a wolf!`;
 }
 
-console.log(warnTheSheep(["sheep", "wolf"])); //
+function countSheeps(sheep) {
+  return sheep.filter(Boolean).length;
+  // TODO
+}
+
+console.log(countSheeps([true, false, true])); //
