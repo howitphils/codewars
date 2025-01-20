@@ -739,4 +739,9 @@ function pipeFix(numbers) {
   return arr;
 }
 
-console.log(pipeFix([1, 3, 5, 7])); //
+const areaOrPerimeter = function (l, w) {
+  return l === w ? l * w : (l + w) * 2;
+  // Return your answer
+};
+
+console.log(areaOrPerimeter(3, 7)); //
