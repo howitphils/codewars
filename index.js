@@ -756,4 +756,10 @@ function countSheeps(sheep) {
   // TODO
 }
 
-console.log(countSheeps([true, false, true])); //
+function findAverage(array) {
+  // your code here
+  if (!array.length) return 0;
+  return array.reduce((acc, curr) => acc + curr, 0) / array.length;
+}
+
+console.log(findAverage([2, 3, 4])); //
