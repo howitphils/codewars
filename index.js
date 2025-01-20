@@ -767,4 +767,8 @@ function getVolumeOfCuboid(length, width, height) {
   return length * width * height;
 }
 
-console.log(getVolumeOfCuboid(1, 2, 3)); //
+function litres(time) {
+  return Math.floor(time / 2);
+}
+
+console.log(litres(4)); //
