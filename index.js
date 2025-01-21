@@ -795,4 +795,8 @@ function feast(beast, dish) {
   );
 }
 
-console.log(feast("dish", "fish")); //
+function solution(nums) {
+  return nums ? nums.sort((a, b) => a - b) : [];
+}
+
+console.log(solution(null)); //
