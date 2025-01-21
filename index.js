@@ -785,4 +785,8 @@ function howMuchILoveYou(nbPetals) {
   // your code
 }
 
-console.log(howMuchILoveYou(210)); //
+function sumStr(a, b) {
+  return String(+a + +b);
+}
+
+console.log(sumStr("1", "4")); //
