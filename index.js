@@ -778,4 +778,26 @@ function sumDigits(number) {
     .reduce((acc, curr) => acc + curr, 0);
 }
 
-console.log(sumDigits(-34)); //
+function howMuchILoveYou(nbPetals) {
+  const arr = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+  for (let i = 1, j = 0; i <= nbPetals; i++) {
+    if (i === nbPetals) {
+      return arr[j];
+    }
+    if (j === arr.length - 1) {
+      j = 0;
+    } else {
+      j++;
+    }
+  }
+  // your code
+}
+
+console.log(howMuchILoveYou(211)); //
