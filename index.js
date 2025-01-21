@@ -779,25 +779,10 @@ function sumDigits(number) {
 }
 
 function howMuchILoveYou(nbPetals) {
-  const arr = [
-    "I love you",
-    "a little",
-    "a lot",
-    "passionately",
-    "madly",
-    "not at all",
+  ["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
+    nbPetals % 6
   ];
-  for (let i = 1, j = 0; i <= nbPetals; i++) {
-    if (i === nbPetals) {
-      return arr[j];
-    }
-    if (j === arr.length - 1) {
-      j = 0;
-    } else {
-      j++;
-    }
-  }
   // your code
 }
 
-console.log(howMuchILoveYou(211)); //
+console.log(howMuchILoveYou(210)); //
