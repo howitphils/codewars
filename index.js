@@ -846,4 +846,15 @@ function checkExam(array1, array2) {
   return answ < 0 ? 0 : answ;
 }
 
-console.log(checkExam(["a", "b", "c"], ["", "", "c"])); //
+var capitals = function (word) {
+  let answ = [];
+  word.split("").forEach((l, i) => {
+    if (l.toUpperCase() === l) {
+      answ.push(i);
+    }
+  });
+  return answ;
+  // Write your code here
+};
+
+console.log(capitals("HeHdaHaaD")); //
