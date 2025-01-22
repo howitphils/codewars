@@ -832,4 +832,18 @@ function binToDec(bin) {
   // TODO
 }
 
-console.log(binToDec("11")); //
+function checkExam(array1, array2) {
+  let answ = 0;
+  array2.forEach((item, i) => {
+    if (item !== "") {
+      if (item === array1[i]) {
+        answ += 4;
+      } else {
+        answ -= 1;
+      }
+    }
+  });
+  return answ < 0 ? 0 : answ;
+}
+
+console.log(checkExam(["a", "b", "c"], ["", "", "c"])); //
