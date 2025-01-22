@@ -827,4 +827,9 @@ function getMiddle(s) {
     : s[Math.floor(s.length / 2) - 1] + s[Math.floor(s.length / 2)];
 }
 
-console.log(getMiddle("hellow")); //
+function binToDec(bin) {
+  return parseInt(bin, 2);
+  // TODO
+}
+
+console.log(binToDec("11")); //
