@@ -856,5 +856,21 @@ var capitals = function (word) {
   return answ;
   // Write your code here
 };
+function diamond(n) {
+  if (n < 0 || n % 2 === 0) return null;
+  let answ = "";
+  let spaces = Math.floor(n / 2);
+  for (let i = 1; i <= n; i += 2) {
+    answ += " ".repeat(spaces) + "*".repeat(i) + "\n";
+    if (i < n) {
+      spaces -= 1;
+    }
+  }
+  for (let i = n - 2; i > 0; i -= 2) {
+    spaces += 1;
+    answ += " ".repeat(spaces) + "*".repeat(i) + "\n";
+  }
+  return answ;
+}
 
-console.log(capitals("HeHdaHaaD")); //
+console.log(diamond(19)); //
