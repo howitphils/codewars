@@ -799,4 +799,8 @@ function solution(nums) {
   return nums ? nums.sort((a, b) => a - b) : [];
 }
 
-console.log(solution(null)); //
+function findSmallestInt(arr) {
+  return arr.sort((a, b) => a - b)[0];
+}
+
+console.log(findSmallestInt([-2, 3, -8, 20, 5])); //
