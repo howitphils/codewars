@@ -820,4 +820,11 @@ function longestConsec(strarr, k) {
   // your code
 }
 
-console.log(longestConsec(["asd", "cc", "asdasdasd", "daasad"], 3)); //
+function getMiddle(s) {
+  //Code goes here!
+  return s.length % 2 !== 0
+    ? s[Math.floor(s.length / 2)]
+    : s[Math.floor(s.length / 2) - 1] + s[Math.floor(s.length / 2)];
+}
+
+console.log(getMiddle("hellow")); //
