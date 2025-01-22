@@ -804,4 +804,20 @@ function findSmallestInt(arr) {
   return Math.min(...arr);
 }
 
-console.log(findSmallestInt([-2, 3, -8, 20, 5])); //
+function longestConsec(strarr, k) {
+  let answ = "";
+  strarr.forEach((item, i, arr) => {
+    let currConc = "";
+    for (let j = 0; j < k; j++) {
+      if (arr[j + i] === undefined) return;
+      currConc += arr[j + i];
+    }
+    if (currConc.length > answ.length) {
+      answ = currConc;
+    }
+  });
+  return answ;
+  // your code
+}
+
+console.log(longestConsec(["asd", "cc", "asdasdasd", "daasad"], 3)); //
