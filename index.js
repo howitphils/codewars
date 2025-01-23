@@ -896,4 +896,9 @@ function findOdd(A) {
   }
 }
 
-console.log(findOdd([1, 1, 1, 1, 2, 3, 3, 4, 4])); //
+function addLength(str) {
+  return str.split(" ").map((w) => w + " " + w.length);
+  //start-here
+}
+
+console.log(addLength(["hi", "hello"])); //
