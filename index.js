@@ -873,4 +873,9 @@ function diamond(n) {
   return answ;
 }
 
-console.log(diamond(19)); //
+function greet(name, owner) {
+  return name === owner ? `Hello boss` : "Hello guest";
+  // Add code here
+}
+
+console.log(greet("Mick", "Mick")); //
