@@ -901,4 +901,17 @@ function addLength(str) {
   //start-here
 }
 
-console.log(addLength(["hi", "hello"])); //
+function towerBuilder(nFloors) {
+  let arr = [];
+  let spaces = nFloors - 1;
+  let stars = 1;
+  for (let i = 0; i < nFloors; i++) {
+    arr.push(" ".repeat(spaces) + "*".repeat(stars) + " ".repeat(spaces));
+    stars += 2;
+    spaces -= 1;
+  }
+  return arr;
+  // build here
+}
+
+console.log(towerBuilder(5)); //
