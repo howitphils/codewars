@@ -878,4 +878,9 @@ function greet(name, owner) {
   // Add code here
 }
 
-console.log(greet("Mick", "Mick")); //
+function remove(string) {
+  //coding and coding....
+  return string[string.length - 1] === "!" ? string.slice(0, -1) : string;
+}
+
+console.log(remove("Hello!")); //
