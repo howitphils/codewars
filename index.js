@@ -887,4 +887,13 @@ function arrayDiff(a, b) {
   return a.filter((n) => !b.includes(n));
 }
 
-console.log(arrayDiff([1, 2], [1])); //
+function findOdd(A) {
+  //happy coding!
+  for (let i = 0; i < A.length; i++) {
+    if (A.filter((n) => n === A[i]).length % 2 !== 0) {
+      return A[i];
+    }
+  }
+}
+
+console.log(findOdd([1, 1, 1, 1, 2, 3, 3, 4, 4])); //
