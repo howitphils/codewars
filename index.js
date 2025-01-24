@@ -928,4 +928,8 @@ function findMultiples(integer, limit) {
   //your code here
 }
 
-console.log(findMultiples(3, 10)); //
+function sayHello(name, city, state) {
+  return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
+}
+
+console.log(sayHello(["John", "Doe"], "Kansas", "Arkham")); //
