@@ -919,4 +919,13 @@ function reverse(string) {
   //your code here
 }
 
-console.log(reverse("Hello There!")); //
+function findMultiples(integer, limit) {
+  let arr = [];
+  for (let i = integer; i <= limit; i += integer) {
+    arr.push(i);
+  }
+  return arr;
+  //your code here
+}
+
+console.log(findMultiples(3, 10)); //
