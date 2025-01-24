@@ -932,4 +932,9 @@ function sayHello(name, city, state) {
   return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
 }
 
-console.log(sayHello(["John", "Doe"], "Kansas", "Arkham")); //
+function xor(a, b) {
+  // TODO: Program Me
+  return a === b ? false : true;
+}
+
+console.log(xor(false, true)); //
