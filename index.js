@@ -950,4 +950,9 @@ function capitalize(s) {
   ];
 }
 
-console.log(capitalize("cxvasd")); //
+function removeUrlAnchor(url) {
+  // TODO: complete
+  return url.split("#")[0];
+}
+
+console.log(removeUrlAnchor("adsd#eea")); //
