@@ -976,4 +976,19 @@ function take(arr, n) {
   return arr.slice(0, n);
 }
 
-console.log(take([1, 2, 3, 5], 1)); //
+function persistence(num) {
+  //code me
+  let count = 0;
+  let number = num;
+  while (String(number).length > 1) {
+    number = String(number)
+      .split("")
+      .map(Number)
+      .reduce((a, b) => a * b);
+    count += 1;
+  }
+
+  return count;
+}
+
+console.log(persistence(222)); //
