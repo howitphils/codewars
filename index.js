@@ -955,4 +955,21 @@ function removeUrlAnchor(url) {
   return url.split("#")[0];
 }
 
-console.log(removeUrlAnchor("adsd#eea")); //
+function dnaStrand(dna) {
+  return dna
+    .split("")
+    .map((l) => {
+      if (l === "C") {
+        return "G";
+      } else if (l === "G") {
+        return "C";
+      } else if (l === "A") {
+        return "T";
+      } else if (l === "T") {
+        return "A";
+      }
+    })
+    .join("");
+}
+
+console.log(dnaStrand("AAGGC")); //
