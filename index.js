@@ -999,4 +999,8 @@ function solve(s) {
   }
 }
 
-console.log(solve("AdzxcAS")); //
+function howManyLightsabersDoYouOwn(name) {
+  return name === "Zach" ? 18 : 0;
+}
+
+console.log(howManyLightsabersDoYouOwn("Hi")); //
