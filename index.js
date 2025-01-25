@@ -991,4 +991,12 @@ function persistence(num) {
   return count;
 }
 
-console.log(persistence(222)); //
+function solve(s) {
+  if (s.split("").filter((l) => l.toLowerCase() === l).length >= s.length / 2) {
+    return s.toLowerCase();
+  } else {
+    return s.toUpperCase();
+  }
+}
+
+console.log(solve("AdzxcAS")); //
