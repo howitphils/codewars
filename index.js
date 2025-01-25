@@ -1003,4 +1003,15 @@ function howManyLightsabersDoYouOwn(name) {
   return name === "Zach" ? 18 : 0;
 }
 
-console.log(howManyLightsabersDoYouOwn("Hi")); //
+function rentalCarCost(d) {
+  // Your solution here
+  if (d >= 3 && d < 7) {
+    return d * 40 - 20;
+  } else if (d >= 7) {
+    return d * 40 - 50;
+  } else {
+    return d * 40;
+  }
+}
+
+console.log(rentalCarCost(3)); //
