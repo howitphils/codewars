@@ -1022,4 +1022,13 @@ function rainAmount(mm) {
   }
 }
 
-console.log(rainAmount(22)); //
+function abbrevName(name) {
+  return (
+    name.split(" ")[0][0].toUpperCase() +
+    "." +
+    name.split(" ")[1][0].toUpperCase()
+  );
+  // code away
+}
+
+console.log(abbrevName("hi hello")); //
