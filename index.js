@@ -1031,4 +1031,11 @@ function abbrevName(name) {
   // code away
 }
 
-console.log(abbrevName("hi hello")); //
+function fakeBin(x) {
+  return x
+    .split("")
+    .map((n) => (Number(n) >= 5 ? "1" : "0"))
+    .join("");
+}
+
+console.log(fakeBin("12432523")); //
