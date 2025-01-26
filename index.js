@@ -1038,4 +1038,10 @@ function fakeBin(x) {
     .join("");
 }
 
-console.log(fakeBin("12432523")); //
+function mergeArrays(arr1, arr2) {
+  return arr1
+    .concat(arr2.filter((n) => !arr1.includes(n)))
+    .sort((a, b) => a - b);
+}
+
+console.log(mergeArrays([1, 2, 3], [1, 2, 5, 6])); //
