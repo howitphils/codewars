@@ -1055,19 +1055,33 @@ function reverseLetter(str) {
 }
 
 const multiplicationTable = function (size) {
-  let answ = [];
-  let arrToPush = [];
+  // let answ = [];
+  // let arrToPush = [];
 
-  for (let i = 1; i <= size; i++) {
-    for (let j = i; j <= size * i; j += i) {
-      arrToPush.push(j);
-    }
-    answ.push(arrToPush);
-    arrToPush = [];
-  }
+  // for (let i = 1; i <= size; i++) {
+  //   for (let j = i; j <= size * i; j += i) {
+  //     arrToPush.push(j);
+  //   }
+  //   answ.push(arrToPush);
+  //   arrToPush = [];
+  // }
 
-  return answ;
+  // return answ;
   // insert code here
+
+  multiplicationTable = function (size) {
+    let res = [];
+
+    for (let i = 1; i <= size; i++) {
+      res[i - 1] = [];
+      for (let j = i; j <= size * i; j += i) {
+        res[i - 1].push(j);
+      }
+    }
+
+    return res;
+    // insert code here
+  };
 };
 
 console.log(multiplicationTable(5)); //
