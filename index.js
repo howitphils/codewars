@@ -1044,4 +1044,14 @@ function mergeArrays(arr1, arr2) {
     .sort((a, b) => a - b);
 }
 
-console.log(mergeArrays([1, 2, 3], [1, 2, 5, 6])); //
+function reverseLetter(str) {
+  //coding and coding..
+  const alph = "abcdefghijklmnopqrstuvwxyz";
+  return str
+    .split("")
+    .filter((l) => alph.includes(l))
+    .reverse()
+    .join("");
+}
+
+console.log(reverseLetter("acsADR3@")); //
