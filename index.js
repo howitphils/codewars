@@ -1084,4 +1084,9 @@ const multiplicationTable = function (size) {
   };
 };
 
-console.log(multiplicationTable(5)); //
+function nameShuffler(str) {
+  //Shuffle It
+  return str.split(" ").reverse().join(" ");
+}
+
+console.log(nameShuffler("Hi hh")); //
