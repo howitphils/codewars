@@ -1089,4 +1089,9 @@ function nameShuffler(str) {
   return str.split(" ").reverse().join(" ");
 }
 
-console.log(nameShuffler("Hi hh")); //
+function findAverage(nums) {
+  // Code here
+  return nums.reduce((a, b) => a + b) / nums.length;
+}
+
+console.log(findAverage([1, 2, 3, 5])); //
