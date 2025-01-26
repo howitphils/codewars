@@ -1054,4 +1054,20 @@ function reverseLetter(str) {
     .join("");
 }
 
-console.log(reverseLetter("acsADR3@")); //
+const multiplicationTable = function (size) {
+  let answ = [];
+  let arrToPush = [];
+
+  for (let i = 1; i <= size; i++) {
+    for (let j = i; j <= size * i; j += i) {
+      arrToPush.push(j);
+    }
+    answ.push(arrToPush);
+    arrToPush = [];
+  }
+
+  return answ;
+  // insert code here
+};
+
+console.log(multiplicationTable(5)); //
