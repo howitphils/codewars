@@ -1094,4 +1094,10 @@ function findAverage(nums) {
   return nums.reduce((a, b) => a + b) / nums.length;
 }
 
-console.log(findAverage([1, 2, 3, 5])); //
+function hello(name) {
+  return `Hello, ${
+    name ? name[0].toUpperCase() + name.substring(1).toLowerCase() : "World"
+  }!`;
+}
+
+console.log(hello("Nick")); //
