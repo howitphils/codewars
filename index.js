@@ -1105,4 +1105,13 @@ function solution(str, ending) {
   // TODO: complete
 }
 
-console.log(solution("hadhs", "hs")); //
+function factorial(n) {
+  //your code here
+  let answ = 1;
+  for (let i = n; i > 0; i--) {
+    answ *= i;
+  }
+  return answ;
+}
+
+console.log(factorial(5)); //
