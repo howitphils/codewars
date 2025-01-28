@@ -1171,4 +1171,8 @@ function mxdiflg(a1, a2) {
   // your code
 }
 
-console.log(mxdiflg(["asd", "zxc"], ["adsad", "xzczc", "asd"])); //
+function getRealFloor(n) {
+  return n <= 0 ? n : n > 13 ? n - 2 : n - 1;
+}
+
+console.log(getRealFloor(12)); //
