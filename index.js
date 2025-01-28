@@ -1151,4 +1151,9 @@ function flattenAndSort(array) {
   return arr.sort((a, b) => a - b);
 }
 
-console.log(flattenAndSort([[1, 2, 2], [2123, 4124], [], [4, 5, 2]])); //
+function include(arr, item) {
+  return arr.includes(item);
+  // ...
+}
+
+console.log(include([1, 2, 3], 1)); //
