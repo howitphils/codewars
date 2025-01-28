@@ -1129,4 +1129,15 @@ function nbYear(p0, percent, aug, p) {
   return answ;
 }
 
-console.log(nbYear(1000, 0.25, 20, 1500)); //
+const rps = (p1, p2) => {
+  if (p1 === p2) return "Draw!";
+  const obj = {
+    scissors: "rock",
+    paper: "scissors",
+    rock: "paper",
+  };
+
+  return obj[p2] === p1 ? "Player 1 won!" : "Player 2 won!";
+};
+
+console.log(rps("scissors", "paper")); //
