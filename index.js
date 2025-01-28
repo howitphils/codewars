@@ -1156,4 +1156,19 @@ function include(arr, item) {
   // ...
 }
 
-console.log(include([1, 2, 3], 1)); //
+function mxdiflg(a1, a2) {
+  if (a1.length < 1 || a2.length < 1) return -1;
+  let diff = 0;
+  for (let i = 0; i < a1.length; i++) {
+    for (let j = 0; j < a2.length; j++) {
+      let currDiff = Math.abs(a1[i].length - a2[j].length);
+      if (currDiff > diff) {
+        diff = currDiff;
+      }
+    }
+  }
+  return diff;
+  // your code
+}
+
+console.log(mxdiflg(["asd", "zxc"], ["adsad", "xzczc", "asd"])); //
