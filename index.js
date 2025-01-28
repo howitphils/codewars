@@ -1118,4 +1118,15 @@ function toBinary(n) {
   return Number(n.toString(2));
 }
 
-console.log(toBinary(12)); //
+function nbYear(p0, percent, aug, p) {
+  // your code
+  let answ = 0;
+  let curr = p0;
+  while (curr < p) {
+    curr = Math.floor(curr + (curr * percent) / 100 + aug);
+    answ += 1;
+  }
+  return answ;
+}
+
+console.log(nbYear(1000, 0.25, 20, 1500)); //
