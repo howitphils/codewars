@@ -1140,4 +1140,15 @@ const rps = (p1, p2) => {
   return obj[p2] === p1 ? "Player 1 won!" : "Player 2 won!";
 };
 
-console.log(rps("scissors", "paper")); //
+("use strict");
+
+function flattenAndSort(array) {
+  // Good luck, brave code warrior!
+  let arr = [];
+  array.forEach((item) => {
+    arr.push(...item);
+  });
+  return arr.sort((a, b) => a - b);
+}
+
+console.log(flattenAndSort([[1, 2, 2], [2123, 4124], [], [4, 5, 2]])); //
