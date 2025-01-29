@@ -1209,4 +1209,10 @@ function rowWeights(array) {
   return [team1, team2];
   //your code here
 }
-console.log(rowWeights([100, 101, 29, 24, 15, 20])); //
+
+function minValue(values) {
+  return +[...new Set(values)].sort((a, b) => a - b).join("");
+  //your code here
+}
+
+console.log(minValue([1, 3, 1, 4, 5, 7, 4, 3, 1, 8])); //
