@@ -1220,4 +1220,8 @@ function findUniq(arr) {
   // do magic
 }
 
-console.log(findUniq([1, 1, 1, 2, 1, 1, 1])); //
+function multipleOfIndex(array) {
+  return array.filter((n, i) => n % i === 0 || n === 0);
+}
+
+console.log(multipleOfIndex([0, 1, 2, 3, 5])); //
