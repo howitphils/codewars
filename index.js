@@ -1196,4 +1196,17 @@ function high(x) {
   return answ;
 }
 
-console.log(high("aa bbb asdadqw xxzx asdq")); //
+function rowWeights(array) {
+  let team1 = 0;
+  let team2 = 0;
+  array.forEach((n, i) => {
+    if (i % 2 === 0) {
+      team1 += n;
+    } else {
+      team2 += n;
+    }
+  });
+  return [team1, team2];
+  //your code here
+}
+console.log(rowWeights([100, 101, 29, 24, 15, 20])); //
