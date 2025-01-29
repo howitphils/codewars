@@ -1215,4 +1215,9 @@ function minValue(values) {
   //your code here
 }
 
-console.log(minValue([1, 3, 1, 4, 5, 7, 4, 3, 1, 8])); //
+function findUniq(arr) {
+  return arr.find((item) => arr.indexOf(item) === arr.lastIndexOf(item));
+  // do magic
+}
+
+console.log(findUniq([1, 1, 1, 2, 1, 1, 1])); //
