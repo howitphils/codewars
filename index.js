@@ -1175,4 +1175,8 @@ function getRealFloor(n) {
   return n <= 0 ? n : n > 13 ? n - 2 : n - 1;
 }
 
-console.log(getRealFloor(12)); //
+function distinct(a) {
+  return [...new Set(a)];
+}
+
+console.log(distinct([1, 1, 1, 1, 2, 3, 4, 4, 4])); //
