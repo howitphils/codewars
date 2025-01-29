@@ -1179,4 +1179,21 @@ function distinct(a) {
   return [...new Set(a)];
 }
 
-console.log(distinct([1, 1, 1, 1, 2, 3, 4, 4, 4])); //
+function high(x) {
+  const alph = "abcdefghijklmnopqrstuvwxyz";
+  let highest = 0;
+  let answ = "";
+  x.split(" ").forEach((word) => {
+    let currSum = 0;
+    word.split("").forEach((l) => {
+      currSum += alph.indexOf(l) + 1;
+    });
+    if (currSum > highest) {
+      highest = currSum;
+      answ = word;
+    }
+  });
+  return answ;
+}
+
+console.log(high("aa bbb asdadqw xxzx asdq")); //
