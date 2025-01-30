@@ -1266,5 +1266,9 @@ function sumTwoSmallestNumbers(numbers) {
     .reduce((a, b) => a + b);
   // Code here
 }
+function hexToDec(hexString) {
+  //your code here
+  return parseInt(hexString, 16);
+}
 
-console.log(sumTwoSmallestNumbers([1, 1, 5, 6])); //
+console.log(hexToDec("0xAA")); //
