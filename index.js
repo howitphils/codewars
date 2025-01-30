@@ -1224,4 +1224,13 @@ function multipleOfIndex(array) {
   return array.filter((n, i) => n % i === 0 || n === 0);
 }
 
-console.log(multipleOfIndex([0, 1, 2, 3, 5])); //
+function multiTable(number) {
+  let answ = "";
+  for (let i = 1; i <= 10; i++) {
+    answ += `${i} * ${number} = ${i * number}${i !== 10 ? "\n" : ""}`;
+  }
+  return answ;
+  // good luck
+}
+
+console.log(multiTable(7)); //
