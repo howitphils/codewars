@@ -1259,4 +1259,12 @@ function testEven(n) {
   //Your awesome code here!
 }
 
-console.log(testEven(1)); //
+function sumTwoSmallestNumbers(numbers) {
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(0, 2)
+    .reduce((a, b) => a + b);
+  // Code here
+}
+
+console.log(sumTwoSmallestNumbers([1, 1, 5, 6])); //
