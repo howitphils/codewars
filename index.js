@@ -1233,4 +1233,25 @@ function multiTable(number) {
   // good luck
 }
 
-console.log(multiTable(7)); //
+function factorial(n) {
+  let fac = 1;
+  for (let i = n; i > 0; i--) {
+    fac *= i;
+  }
+  return fac;
+  // Calculate the factorial here
+}
+
+function factorial(n) {
+  if (n < 0 || n > 12) {
+    throw RangeError();
+  }
+  let fac = 1;
+  for (let i = n; i > 0; i--) {
+    fac *= i;
+  }
+  return fac;
+  // Calculate the factorial here
+}
+
+console.log(factorial(3)); //
