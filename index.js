@@ -1254,4 +1254,9 @@ function factorial(n) {
   // Calculate the factorial here
 }
 
-console.log(factorial(3)); //
+function testEven(n) {
+  return n % 2 === 0;
+  //Your awesome code here!
+}
+
+console.log(testEven(1)); //
