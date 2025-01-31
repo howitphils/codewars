@@ -1281,9 +1281,7 @@ function animal(obj) {
 }
 
 function array(string) {
-  if (string.split(",").length <= 2) return null;
-  const arr = string.split(",");
-  return arr.slice(1, arr.length - 1).join(" ");
+  return string.split(",").slice(1, -1).join(" ") || null;
   // TODO
 }
 
