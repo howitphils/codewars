@@ -1311,4 +1311,9 @@ function getEvenNumbers(numbersArray) {
   // filter out the odd numbers
 }
 
-console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); //
+function filter_list(l) {
+  return l.filter((a) => typeof a === "number");
+  // Return a new array with the strings filtered out
+}
+
+console.log(filter_list([1, 2, 3, "4"])); //
