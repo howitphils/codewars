@@ -1271,4 +1271,9 @@ function hexToDec(hexString) {
   return parseInt(hexString, 16);
 }
 
-console.log(hexToDec("0xAA")); //
+function noOdds(values) {
+  return values.filter((n) => n % 2 === 0);
+  // Return all non-odd values
+}
+
+console.log(noOdds([1, 2, 3, 5])); //
