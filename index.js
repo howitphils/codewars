@@ -1280,4 +1280,11 @@ function animal(obj) {
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
 
-console.log(animal({ name: "harry", legs: 2, color: "black" })); //
+function array(string) {
+  if (string.split(",").length <= 2) return null;
+  const arr = string.split(",");
+  return arr.slice(1, arr.length - 1).join(" ");
+  // TODO
+}
+
+console.log(array("1,2,3,4,5")); //
