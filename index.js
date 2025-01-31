@@ -1316,4 +1316,15 @@ function filter_list(l) {
   // Return a new array with the strings filtered out
 }
 
-console.log(filter_list([1, 2, 3, "4"])); //
+String.prototype.isUpperCase = function () {
+  let answ = true;
+  this.split(" ").forEach((word) => {
+    if (word.split("").filter((l) => l !== l.toUpperCase()).length > 0) {
+      answ = false;
+    }
+  });
+  return answ;
+  // your code here
+};
+
+console.log(); //
