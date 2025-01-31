@@ -1285,4 +1285,25 @@ function array(string) {
   // TODO
 }
 
-console.log(array("1,2,3,4,5")); //
+var encryptThis = function (text) {
+  // Implement me! :)
+  return text
+    .split(" ")
+    .map((word) => {
+      if (word.length === 1) {
+        return word.charCodeAt();
+      } else if (word.length === 2) {
+        return word[0].charCodeAt() + word[1];
+      } else {
+        return (
+          word[0].charCodeAt() +
+          word[word.length - 1] +
+          word.slice(2, -1) +
+          word[1]
+        );
+      }
+    })
+    .join(" ");
+};
+
+console.log(encryptThis("hadsand asdnjkjxc qwqeqwe aa d")); //
