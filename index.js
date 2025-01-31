@@ -1276,4 +1276,8 @@ function noOdds(values) {
   // Return all non-odd values
 }
 
-console.log(noOdds([1, 2, 3, 5])); //
+function animal(obj) {
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
+console.log(animal({ name: "harry", legs: 2, color: "black" })); //
