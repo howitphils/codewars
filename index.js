@@ -1327,4 +1327,8 @@ String.prototype.isUpperCase = function () {
   // your code here
 };
 
-console.log(); //
+function cubeChecker(volume, side) {
+  return volume > 0 && side > 0 ? Math.cbrt(volume) === side : false;
+}
+
+console.log(cubeChecker(125, 4)); //
