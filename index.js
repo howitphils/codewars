@@ -1331,4 +1331,9 @@ function cubeChecker(volume, side) {
   return volume > 0 && side > 0 ? Math.cbrt(volume) === side : false;
 }
 
-console.log(cubeChecker(125, 4)); //
+function spEng(sentence) {
+  return sentence.toLowerCase().split("english").length > 1;
+  //write your code here
+}
+
+console.log(spEng("asdjbasdenglishad")); //
