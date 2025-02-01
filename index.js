@@ -1351,10 +1351,9 @@ function sumOfMinimums(arr) {
   return arr.reduce((acc, curr) => acc + Math.min(...curr), 0);
 }
 
-console.log(
-  sumOfMinimums([
-    [1, 2, 5],
-    [3, 10, 2],
-    [453, 22],
-  ])
-); //
+// Create the combineNames function here
+function combineNames(firstName, lastName) {
+  return `${firstName} ${lastName}`;
+}
+
+console.log(combineNames("hi", "hello")); //
