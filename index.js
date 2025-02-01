@@ -1342,12 +1342,19 @@ function nearestSq(n) {
 }
 
 function sumOfMinimums(arr) {
-  let sum = 0;
-  arr.forEach((arr) => {
-    sum += arr.sort((a, b) => a - b)[0];
-  });
-  return sum;
-  // your code here
+  // let sum = 0;
+  // arr.forEach((arr) => {
+  //   sum += arr.sort((a, b) => a - b)[0];
+  // });
+  // return sum;
+  // // your code here
+  return arr.reduce((acc, curr) => acc + Math.min(...curr), 0);
 }
 
-console.log(); //
+console.log(
+  sumOfMinimums([
+    [1, 2, 5],
+    [3, 10, 2],
+    [453, 22],
+  ])
+); //
