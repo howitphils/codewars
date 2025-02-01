@@ -1336,4 +1336,9 @@ function spEng(sentence) {
   //write your code here
 }
 
-console.log(spEng("asdjbasdenglishad")); //
+function nearestSq(n) {
+  return Math.pow(Math.round(Math.sqrt(n)), 2);
+  // your code
+}
+
+console.log(nearestSq(266)); //
