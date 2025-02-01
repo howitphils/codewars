@@ -1341,4 +1341,13 @@ function nearestSq(n) {
   // your code
 }
 
-console.log(nearestSq(266)); //
+function sumOfMinimums(arr) {
+  let sum = 0;
+  arr.forEach((arr) => {
+    sum += arr.sort((a, b) => a - b)[0];
+  });
+  return sum;
+  // your code here
+}
+
+console.log(); //
