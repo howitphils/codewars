@@ -1366,4 +1366,8 @@ function sumMul(n, m) {
   //your idea here
 }
 
-console.log(sumMul(2, 10)); //
+function check(a, x) {
+  return a.includes(x);
+}
+
+console.log(check([1, 2, 3, 5, "6"], "6")); //
