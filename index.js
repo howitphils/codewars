@@ -1370,4 +1370,12 @@ function check(a, x) {
   return a.includes(x);
 }
 
-console.log(check([1, 2, 3, 5, "6"], "6")); //
+function wordsToMarks(string) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  return string
+    .split("")
+    .reduce((acc, curr) => acc + alphabet.indexOf(curr) + 1, 0);
+  //your code here
+}
+
+console.log(wordsToMarks("cxvad")); //
