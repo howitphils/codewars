@@ -1356,4 +1356,14 @@ function combineNames(firstName, lastName) {
   return `${firstName} ${lastName}`;
 }
 
-console.log(combineNames("hi", "hello")); //
+function sumMul(n, m) {
+  if (m <= n) return "INVALID";
+  let sum = 0;
+  for (let i = n; i < m; i += n) {
+    sum += i;
+  }
+  return sum;
+  //your idea here
+}
+
+console.log(sumMul(2, 10)); //
