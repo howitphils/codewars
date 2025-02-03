@@ -1411,4 +1411,20 @@ function solve(s) {
   return highest;
 }
 
-console.log(solve("bsdfgqerdnqwkfnakdjgjnksjgdfnk")); //
+function whatday(num) {
+  if (num < 1 || num > 7) return "Wrong, please enter a number between 1 and 7";
+  const arr = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  // put your code here
+
+  return arr[num - 1];
+}
+
+console.log(whatday(3)); //
