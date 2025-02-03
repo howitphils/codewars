@@ -1427,4 +1427,10 @@ function whatday(num) {
   return arr[num - 1];
 }
 
-console.log(whatday(3)); //
+function largestPairSum(numbers) {
+  //TODO: Write your Code here
+  const sorted = numbers.sort((a, b) => b - a);
+  return sorted[0] + sorted[1];
+}
+
+console.log(largestPairSum([20, 1, 32, 41, 55, 12, 45])); //
