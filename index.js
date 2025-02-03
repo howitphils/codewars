@@ -1385,4 +1385,30 @@ function remove(string) {
   return s.replace(/!+$/, "");
 }
 
-console.log(remove("ads!jsad!!!")); //
+function derive(coefficient, exponent) {
+  return `${coefficient * exponent}x^${exponent - 1}`;
+}
+
+function solve(s) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const vowels = "aeiou";
+  let highest = 0;
+
+  s.split("")
+    .map((l) => (vowels.includes(l) ? " " : l))
+    .join("")
+    .trim()
+    .split(" ")
+    .forEach((str) => {
+      let currSum = 0;
+      str.split("").forEach((l) => {
+        currSum += alphabet.indexOf(l) + 1;
+      });
+      if (currSum > highest) {
+        highest = currSum;
+      }
+    });
+  return highest;
+}
+
+console.log(solve("bsdfgqerdnqwkfnakdjgjnksjgdfnk")); //
