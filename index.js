@@ -1379,9 +1379,10 @@ function wordsToMarks(string) {
 }
 
 function remove(string) {
-  const reversed = string.split("").reverse();
-  const index = reversed.findIndex((l) => l !== "!");
-  return reversed.slice(index).reverse().join("");
+  // const reversed = string.split("").reverse();
+  // const index = reversed.findIndex((l) => l !== "!");
+  // return reversed.slice(index).reverse().join("");
+  return s.replace(/!+$/, "");
 }
 
 console.log(remove("ads!jsad!!!")); //
