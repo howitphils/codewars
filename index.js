@@ -1378,4 +1378,10 @@ function wordsToMarks(string) {
   //your code here
 }
 
-console.log(wordsToMarks("cxvad")); //
+function remove(string) {
+  const reversed = string.split("").reverse();
+  const index = reversed.findIndex((l) => l !== "!");
+  return reversed.slice(index).reverse().join("");
+}
+
+console.log(remove("ads!jsad!!!")); //
