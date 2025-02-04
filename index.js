@@ -1433,4 +1433,8 @@ function largestPairSum(numbers) {
   return sorted[0] + sorted[1];
 }
 
-console.log(largestPairSum([20, 1, 32, 41, 55, 12, 45])); //
+function isTriangle(a, b, c) {
+  return a + b > c && a + c > b && b + c > a;
+}
+
+console.log(isTriangle(9, 2, 1)); //
