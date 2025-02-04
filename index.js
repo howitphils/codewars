@@ -1437,4 +1437,10 @@ function isTriangle(a, b, c) {
   return a + b > c && a + c > b && b + c > a;
 }
 
-console.log(isTriangle(9, 2, 1)); //
+function validateUsr(username) {
+  if (username.length < 4 || username.length > 16) return false;
+  const res = /^[a-z0-9_]+$/.test(username); //regex here/.test(username)
+  return res;
+}
+
+console.log(validateUsr("dasjdj__ads")); //
