@@ -1473,4 +1473,14 @@ function likes(names) {
     return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 }
 
-console.log(likes(["Peter", "Gregory", "Mike", "Mitchel"])); //
+function printerError(s) {
+  // your code
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  let mist = s
+    .split("")
+    .filter((l) => alphabet.indexOf(l) > alphabet.indexOf("m")).length;
+  return `${mist}/${s.length}`;
+}
+
+console.log(printerError("xcvdqwdasc")); //
