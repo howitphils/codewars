@@ -1483,4 +1483,9 @@ function printerError(s) {
   return `${mist}/${s.length}`;
 }
 
-console.log(printerError("xcvdqwdasc")); //
+function mouthSize(animal) {
+  return animal.toLowerCase() === "alligator" ? "small" : "wide";
+  // code here
+}
+
+console.log(mouthSize("hi")); //
