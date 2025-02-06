@@ -1523,4 +1523,13 @@ function problem(x) {
   if (typeof x === "string") return "Error";
   return x * 50 + 6;
 }
-console.log(problem("asd")); //
+
+function stringClean(s) {
+  // Function will return the cleaned string
+  return s
+    .split("")
+    .filter((l) => l !== "0" && !parseInt(l))
+    .join("");
+}
+
+console.log(stringClean("dasa21wdzsd23r")); //
