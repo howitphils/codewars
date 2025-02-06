@@ -1537,4 +1537,14 @@ function sortByLength(array) {
   return array.sort((a, b) => a.length - b.length);
 }
 
-console.log(sortByLength(["adzcx", "sad", "xzcqw", "qqq"])); //
+function adjacentElementsProduct(array) {
+  let highest = array[0] * array[1];
+  array.forEach((n, i, arr) => {
+    if (n * arr[i + 1] > highest) {
+      highest = n * arr[i + 1];
+    }
+  });
+  return highest;
+}
+
+console.log(adjacentElementsProduct([1, 2, 3, -10])); //
