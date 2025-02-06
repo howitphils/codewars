@@ -1511,5 +1511,11 @@ function incrementString(strng) {
       newNum.length > numArr.length ? -numArr.length : -newNum.length
     ) + newNum
   );
+}
 
-console.log(incrementString("fo99obar99")); //
+function multiply(number) {
+  //your code here
+  return number * Math.pow(5, String(Math.abs(number)).length);
+}
+
+console.log(); //
