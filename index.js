@@ -1492,4 +1492,24 @@ function usdcny(usd) {
   return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
 }
 
-console.log(usdcny(90)); //
+function incrementString(strng) {
+  let arrRev = strng.split("").reverse();
+  let numArr = [];
+  for (let i = 0; i < arrRev.length; i++) {
+    if (arrRev[i] === "0" || parseInt(arrRev[i])) {
+      numArr.push(arrRev[i]);
+    } else {
+      break;
+    }
+  }
+
+  const newNum = String(Number(numArr.reverse().join("")) + 1);
+
+  return (
+    strng.slice(
+      0,
+      newNum.length > numArr.length ? -numArr.length : -newNum.length
+    ) + newNum
+  );
+
+console.log(incrementString("fo99obar99")); //
