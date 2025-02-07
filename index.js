@@ -1555,4 +1555,9 @@ function findEvenIndex(arr) {
   );
 }
 
-console.log(findEvenIndex([-10, -20, 40, 10, 22, 19, 0])); //
+function lowercaseCount(str) {
+  //How many?
+  return str.split("").filter((l) => /^[a-z]+$/.test(l)).length;
+}
+
+console.log(lowercaseCount("djknsaj212enncxADasnd&^&(**&")); //
