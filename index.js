@@ -1561,4 +1561,9 @@ function lowercaseCount(str) {
   return (str.match(/[a-z]/g) || []).length;
 }
 
-console.log(lowercaseCount("djknsaj212enncxADasnd&^&(**&")); //
+function remove(string) {
+  //coding and coding....
+  return string.replaceAll("!", "") + "!";
+}
+
+console.log(remove("csdcds!!dasdAASDAxc !!d as!!")); //
