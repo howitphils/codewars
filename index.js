@@ -1566,4 +1566,12 @@ function remove(string) {
   return string.replaceAll("!", "") + "!";
 }
 
-console.log(remove("csdcds!!dasdAASDAxc !!d as!!")); //
+function isSortedAndHow(array) {
+  return array[0] === Math.min(...array)
+    ? "yes, ascending"
+    : array[0] === Math.max(...array)
+    ? "yes, descending"
+    : "no";
+}
+
+console.log(isSortedAndHow([1, 2, "3", 0])); //
