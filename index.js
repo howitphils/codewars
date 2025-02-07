@@ -1547,4 +1547,12 @@ function adjacentElementsProduct(array) {
   return highest;
 }
 
-console.log(adjacentElementsProduct([1, 2, 3, -10])); //
+function findEvenIndex(arr) {
+  return arr.findIndex(
+    (n, i, arr) =>
+      arr.slice(0, i).reduce((a, b) => a + b, 0) ===
+      arr.slice(i + 1, arr.length).reduce((a, b) => a + b, 0)
+  );
+}
+
+console.log(findEvenIndex([-10, -20, 40, 10, 22, 19, 0])); //
