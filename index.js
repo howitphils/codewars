@@ -1557,7 +1557,8 @@ function findEvenIndex(arr) {
 
 function lowercaseCount(str) {
   //How many?
-  return str.split("").filter((l) => /^[a-z]+$/.test(l)).length;
+  // return str.split("").filter((l) => /^[a-z]+$/.test(l)).length;
+  return (str.match(/[a-z]/g) || []).length;
 }
 
 console.log(lowercaseCount("djknsaj212enncxADasnd&^&(**&")); //
