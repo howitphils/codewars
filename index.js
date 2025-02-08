@@ -1603,4 +1603,15 @@ function shortenToDate(longDate) {
   return longDate.split(",")[0];
 }
 
-console.log(shortenToDate()); //
+function minSum(arr) {
+  // your code here
+  let sum = 0;
+  let sorted = arr.sort((a, b) => a - b);
+  for (let i = 1; i <= arr.length / 2; i++) {
+    sum += sorted[i - 1] * sorted[arr.length - i];
+  }
+
+  return sum;
+}
+
+console.log(minSum([1, 2, 3, 4, 5, 10, 2, 0])); //
