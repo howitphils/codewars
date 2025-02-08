@@ -1585,4 +1585,17 @@ function defineSuit(card) {
   return obj[card[card.length - 1]];
 }
 
-console.log(defineSuit("32♦")); //
+function vowelIndices(word) {
+  //your code here
+  return word
+    .toLowerCase()
+    .split("")
+    .reduce((acc, curr, i) => {
+      if (/[aeiouy]/gi.test(curr)) {
+        acc.push(i + 1);
+      }
+      return acc;
+    }, []);
+}
+
+console.log(vowelIndices("czdsadqweQ12")); //
