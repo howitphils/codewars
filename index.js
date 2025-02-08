@@ -1631,4 +1631,14 @@ var greet = function (name) {
   return `Hello ${name[0].toUpperCase() + name.substring(1).toLowerCase()}!`;
 };
 
-console.log(greet("jzxcAsad"));
+function alphabetPosition(text) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  return text
+    .toLowerCase()
+    .split("")
+    .filter((l) => alphabet.includes(l))
+    .map((l) => alphabet.indexOf(l) + 1)
+    .join(" ");
+}
+
+console.log(alphabetPosition("jadhbqdj djkASd&*^* adakjdn12be"));
