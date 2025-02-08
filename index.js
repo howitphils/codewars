@@ -1627,4 +1627,8 @@ function sumOfDifferences(arr) {
     }, 0);
 }
 
-console.log(sumOfDifferences([3, -5, 0, 9, 6, -3, -10, -10])); // 19
+var greet = function (name) {
+  return `Hello ${name[0].toUpperCase() + name.substring(1).toLowerCase()}!`;
+};
+
+console.log(greet("jzxcAsad"));
