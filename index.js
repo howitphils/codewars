@@ -1614,4 +1614,17 @@ function minSum(arr) {
   return sum;
 }
 
-console.log(minSum([1, 2, 3, 4, 5, 10, 2, 0])); //
+function sumOfDifferences(arr) {
+  return arr
+    .sort((a, b) => b - a)
+    .reduce((acc, curr, i, arr) => {
+      if (!isNaN(arr[i + 1])) {
+        console.log("acc: ", acc);
+        console.log("curr: ", curr);
+        acc += curr - arr[i + 1];
+      }
+      return acc;
+    }, 0);
+}
+
+console.log(sumOfDifferences([3, -5, 0, 9, 6, -3, -10, -10])); // 19
