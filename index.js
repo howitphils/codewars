@@ -1598,4 +1598,9 @@ function vowelIndices(word) {
     }, []);
 }
 
-console.log(vowelIndices("czdsadqweQ12")); //
+function shortenToDate(longDate) {
+  // your code here
+  return longDate.split(",")[0];
+}
+
+console.log(shortenToDate()); //
