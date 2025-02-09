@@ -1667,4 +1667,11 @@ function noBoringZeros(n) {
   return Number(String(n).replace(/0+$/, "")) || 0;
 }
 
-console.log(noBoringZeros(-12030000));
+function findLongest(array) {
+  // code here
+  return array.find(
+    (n) => String(n).length === String(Math.max(...array)).length
+  );
+}
+
+console.log(findLongest([1000, 10001, 20001]));
