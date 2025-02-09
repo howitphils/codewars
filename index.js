@@ -1641,4 +1641,15 @@ function alphabetPosition(text) {
     .join(" ");
 }
 
-console.log(alphabetPosition("jadhbqdj djkASd&*^* adakjdn12be"));
+function digPow(n, p) {
+  let arr = String(n).split("").map(Number);
+  let sum = 0;
+  for (let i = 0, j = p; i < arr.length; i++) {
+    sum += arr[i] ** j;
+    j += 1;
+  }
+  return sum % n === 0 ? sum / n : -1;
+  // ...
+}
+
+console.log(digPow(1280, 4));
