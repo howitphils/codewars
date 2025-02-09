@@ -1642,14 +1642,19 @@ function alphabetPosition(text) {
 }
 
 function digPow(n, p) {
-  let arr = String(n).split("").map(Number);
-  let sum = 0;
-  for (let i = 0, j = p; i < arr.length; i++) {
-    sum += arr[i] ** j;
-    j += 1;
-  }
-  return sum % n === 0 ? sum / n : -1;
+  // let arr = String(n).split("").map(Number);
+  // let sum = 0;
+  // for (let i = 0, j = p; i < arr.length; i++) {
+  //   sum += arr[i] ** j;
+  //   j += 1;
+  // }
+  // return sum % n === 0 ? sum / n : -1;
+
+  let sum = String(n)
+    .split("")
+    .reduce((acc, curr, i) => acc + Math.pow(curr, p + i), 0);
+  return sum % n ? -1 : sum / n;
   // ...
 }
 
-console.log(digPow(1280, 4));
+console.log(digPow(89, 1));
