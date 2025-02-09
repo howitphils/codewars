@@ -1657,4 +1657,9 @@ function digPow(n, p) {
   // ...
 }
 
-console.log(digPow(89, 1));
+function twoDecimalPlaces(n) {
+  // Your code here
+  return +n.toFixed(2);
+}
+
+console.log(twoDecimalPlaces(2.123213));
