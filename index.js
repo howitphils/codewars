@@ -1679,10 +1679,20 @@ function toCsvText(array) {
   return array.join("\n");
 }
 
-console.log(
-  toCsvText([
-    [1, 2, 3, 4],
-    [21, 12312, 13, 12],
-    [1, 123, 12, 3, 123, 123, 4324],
-  ])
-);
+const vowels = "aeiou";
+
+function encode(string) {
+  return string
+    .split("")
+    .map((l) => (vowels.includes(l) ? vowels.indexOf(l) + 1 : l))
+    .join("");
+}
+
+function decode(string) {
+  return string
+    .split("")
+    .map((l) => (parseInt(l) ? vowels[l - 1] : l))
+    .join("");
+}
+
+console.log(decode("daxcdqkdasjnkhqweh"));
