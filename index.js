@@ -1662,4 +1662,9 @@ function twoDecimalPlaces(n) {
   return +n.toFixed(2);
 }
 
-console.log(twoDecimalPlaces(2.123213));
+function noBoringZeros(n) {
+  // your code
+  return Number(String(n).replace(/0+$/, "")) || 0;
+}
+
+console.log(noBoringZeros(-12030000));
