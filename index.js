@@ -1674,4 +1674,19 @@ function findLongest(array) {
   );
 }
 
-console.log(findLongest([1000, 10001, 20001]));
+function toCsvText(array) {
+  // good luck
+  return array
+    .map((item, i, arr) =>
+      i < arr.length - 1 ? item.join(",") + "\n" : item.join(",")
+    )
+    .join("");
+}
+
+console.log(
+  toCsvText([
+    [1, 2, 3, 4],
+    [21, 12312, 13, 12],
+    [1, 123, 12, 3, 123, 123, 4324],
+  ])
+);
