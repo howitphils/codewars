@@ -1676,11 +1676,7 @@ function findLongest(array) {
 
 function toCsvText(array) {
   // good luck
-  return array
-    .map((item, i, arr) =>
-      i < arr.length - 1 ? item.join(",") + "\n" : item.join(",")
-    )
-    .join("");
+  return array.join("\n");
 }
 
 console.log(
