@@ -1695,11 +1695,9 @@ function getSize(width, height, depth) {
 }
 
 function isVow(a) {
-  const obj = "aeiou".split("").reduce((acc, curr) => {
-    acc[curr.charCodeAt()] = curr;
-    return acc;
-  }, {});
-  return a.map((n) => (obj[n] ? obj[n] : n));
+  return a.map((n) =>
+    "aeiou".includes(String.fromCharCode(n)) ? String.fromCharCode(n) : n
+  );
 }
 
 console.log(isVow([192, 1002, 102, 97, 99, 1012, 220]));
