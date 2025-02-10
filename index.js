@@ -1687,4 +1687,11 @@ function decode(string) {
   return string.replace(/[1-5]/g, (x) => "_aeiou".charAt(x));
 }
 
-console.log(decode("daxcdqkdasjnkhqweh"));
+function getSize(width, height, depth) {
+  return [
+    2 * width * height + 2 * height * depth + 2 * width * depth,
+    width * depth * height,
+  ];
+}
+
+console.log(getSize(8, 10, 8));
