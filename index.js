@@ -1700,4 +1700,11 @@ function isVow(a) {
   );
 }
 
-console.log(isVow([192, 1002, 102, 97, 99, 1012, 220]));
+function predictAge(...params) {
+  // your code
+  return Math.floor(
+    Math.sqrt(params.map((n) => n * n).reduce((acc, curr) => acc + curr, 0)) / 2
+  );
+}
+
+console.log(predictAge(192, 1002, 102, 97, 99, 1012, 220));
