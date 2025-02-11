@@ -1743,7 +1743,7 @@ function replace(s) {
 
 function digits(n) {
   // TODO
-  return String(n).split("").length;
+  return String(n).length;
 }
 
 console.log(digits(999));
