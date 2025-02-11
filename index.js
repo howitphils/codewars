@@ -1707,4 +1707,15 @@ function predictAge(...params) {
   );
 }
 
-console.log(predictAge(192, 1002, 102, 97, 99, 1012, 220));
+function cookie(x) {
+  return `Who ate the last cookie? It was ${
+    typeof x === "string"
+      ? "Zach"
+      : typeof x === "number"
+      ? "Monica"
+      : "the dog"
+  }!`;
+  // ...
+}
+
+console.log(cookie(21));
