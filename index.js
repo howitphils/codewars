@@ -1740,3 +1740,10 @@ function replace(s) {
   //coding and coding....
   return s.replace(/[aeiouAEIOU]/g, "!");
 }
+
+function digits(n) {
+  // TODO
+  return String(n).split("").length;
+}
+
+console.log(digits(999));
