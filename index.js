@@ -1718,4 +1718,22 @@ function cookie(x) {
   // ...
 }
 
-console.log(cookie(21));
+var SequenceSum = (function () {
+  function SequenceSum() {}
+
+  SequenceSum.showSequence = function (count) {
+    if (count === 0) return "0=0";
+    if (count < 0) return `${count}<0`;
+    let sum = "0";
+    let sum2 = 0;
+    for (let i = 1; i <= count; i++) {
+      sum += `+${i}`;
+      sum2 += i;
+    }
+    return sum + ` = ${sum2}`;
+  };
+
+  return SequenceSum;
+})();
+
+console.log(sequenceSum(6));
