@@ -1736,4 +1736,7 @@ var SequenceSum = (function () {
   return SequenceSum;
 })();
 
-console.log(sequenceSum(6));
+function replace(s) {
+  //coding and coding....
+  return s.replace(/[aeiouAEIOU]/g, "!");
+}
