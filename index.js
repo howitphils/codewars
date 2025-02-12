@@ -1779,4 +1779,11 @@ function greet(language) {
   return db[language] || "Welcome";
 }
 
-console.log(greet("hi"));
+function switcheroo(x) {
+  return x
+    .split("")
+    .map((l) => (l === "a" ? "b" : l === "b" ? "a" : l))
+    .join("");
+}
+
+console.log(switcheroo("xzcasdqwd"));
