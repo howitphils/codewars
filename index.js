@@ -1814,4 +1814,9 @@ function filterString(value) {
   return +value.replace(/[a-z]/g, "");
 }
 
-console.log(filterString("ajkdsbzxc1237sdhj7"));
+function printArray(array) {
+  //show me the code!
+  return array.join(",");
+}
+
+console.log(printArray([1, 2, 3]));
