@@ -1809,4 +1809,9 @@ function partlist(arr) {
   return newArr;
 }
 
-console.log(partlist(["hi", "hello", "ggg", "adssa"]));
+function filterString(value) {
+  //Complete this function :)
+  return +value.replace(/[a-z]/g, "");
+}
+
+console.log(filterString("ajkdsbzxc1237sdhj7"));
