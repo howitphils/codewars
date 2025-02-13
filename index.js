@@ -1799,4 +1799,14 @@ function odds(values) {
   return values.filter((n) => n % 2 !== 0);
 }
 
-console.log(odds([1, 2, 3, 4, 5, 6]));
+function partlist(arr) {
+  // your code
+  let newArr = [];
+  for (let i = 1; i < arr.length; i++) {
+    let copy = [...arr];
+    newArr.push([copy.splice(0, i).join(" "), copy.join(" ")]);
+  }
+  return newArr;
+}
+
+console.log(partlist(["hi", "hello", "ggg", "adssa"]));
