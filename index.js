@@ -1866,4 +1866,13 @@ var Ball = function (ballType) {
 
 const ball = new Ball();
 
-console.log(ball.ballType);
+function numberToPower(number, power) {
+  let newNum = 1;
+  for (let i = 0; i < power; i++) {
+    newNum *= number;
+  }
+  return newNum;
+  // Code here
+}
+
+console.log(numberToPower(10, 3));
