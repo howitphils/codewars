@@ -1859,4 +1859,9 @@ function solve(arr) {
   });
 }
 
-console.log(solve(["dhsad", "cxzc", "abce"]));
+var Ball = function (ballType) {
+  // your code goes here
+  return (this.ballType = ballType ? ballType : "regular");
+};
+
+console.log();
