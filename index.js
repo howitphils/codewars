@@ -1838,4 +1838,8 @@ function smallEnough(a, limit) {
   return !a.filter((n) => n > limit).length;
 }
 
-console.log(smallEnough([1, 20, 2, 1, 4], 1));
+function bump(x) {
+  return x.replaceAll("_", "").length > 15 ? "Car Dead" : "Woohoo!";
+}
+
+console.log(bump("____nnn__n_nn__"));
