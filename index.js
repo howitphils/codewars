@@ -1842,4 +1842,21 @@ function bump(x) {
   return x.replaceAll("_", "").length > 15 ? "Car Dead" : "Woohoo!";
 }
 
-console.log(bump("____nnn__n_nn__"));
+function solve(arr) {
+  //code
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  return arr.map((word) => {
+    let count = 0;
+    word
+      .toLowerCase()
+      .split("")
+      .forEach((l, i) => {
+        if (alphabet.indexOf(l) === i) {
+          count += 1;
+        }
+      });
+    return count;
+  });
+}
+
+console.log(solve(["dhsad", "cxzc", "abce"]));
