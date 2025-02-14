@@ -1834,4 +1834,8 @@ function remainder(n, m) {
   return n > m ? n % m : m % n;
 }
 
-console.log(remainder(20, 21));
+function smallEnough(a, limit) {
+  return !a.filter((n) => n > limit).length;
+}
+
+console.log(smallEnough([1, 20, 2, 1, 4], 1));
