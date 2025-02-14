@@ -1861,7 +1861,9 @@ function solve(arr) {
 
 var Ball = function (ballType) {
   // your code goes here
-  return (this.ballType = ballType ? ballType : "regular");
+  this.ballType = ballType || "regular";
 };
 
-console.log();
+const ball = new Ball();
+
+console.log(ball.ballType);
