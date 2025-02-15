@@ -1875,4 +1875,9 @@ function numberToPower(number, power) {
   // Code here
 }
 
-console.log(numberToPower(10, 3));
+function contamination(text, char) {
+  // Code here ;)
+  return text.replace(/./g, char);
+}
+
+console.log(contamination("asd", "d"));
