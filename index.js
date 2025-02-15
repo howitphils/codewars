@@ -1880,4 +1880,19 @@ function contamination(text, char) {
   return text.replace(/./g, char);
 }
 
-console.log(contamination("asd", "d"));
+function remove(s, n) {
+  //coding and coding....
+  return s
+    .split("")
+    .map((l) => {
+      if (n > 0 && l === "!") {
+        n -= 1;
+        return "";
+      } else {
+        return l;
+      }
+    })
+    .join("");
+}
+
+console.log(remove("asd!!a!sd!", 3));
