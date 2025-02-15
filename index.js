@@ -1882,17 +1882,22 @@ function contamination(text, char) {
 
 function remove(s, n) {
   //coding and coding....
-  return s
-    .split("")
-    .map((l) => {
-      if (n > 0 && l === "!") {
-        n -= 1;
-        return "";
-      } else {
-        return l;
-      }
-    })
-    .join("");
+  // return s
+  //   .split("")
+  //   .map((l) => {
+  //     if (n > 0 && l === "!") {
+  //       n -= 1;
+  //       return "";
+  //     } else {
+  //       return l;
+  //     }
+  //   })
+  //   .join("");
+
+  for (let i = 0; i < n; i++) {
+    s = s.replace("!", "");
+  }
+  return s;
 }
 
 console.log(remove("asd!!a!sd!", 3));
