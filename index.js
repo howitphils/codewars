@@ -1906,4 +1906,31 @@ function billboard(name, price = 30) {
   return cost;
 }
 
-console.log(billboard("asdasdk", 22));
+function alphabetWar(fight) {
+  let objLeft = {
+    w: 4,
+    p: 3,
+    b: 2,
+    s: 1,
+  };
+  let objRight = {
+    m: 4,
+    q: 3,
+    d: 2,
+    z: 1,
+  };
+  let left = 0;
+  let right = 0;
+  fight.split("").forEach((l) => {
+    if (objLeft[l]) {
+      left += objLeft[l];
+    } else if (objRight[l]) {
+      right += objRight[l];
+    }
+  });
+  return left === right
+    ? "Let's fight again!"
+    : left > right
+    ? "Left side wins!"
+    : "Right side wins!";
+}
