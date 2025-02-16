@@ -1956,15 +1956,16 @@ String.prototype.digit = function () {
 };
 
 function generateShape(integer) {
-  let str = "";
-  for (let i = 0; i < integer; i++) {
-    if (i === integer - 1) {
-      str += "+".repeat(integer);
-    } else {
-      str += "+".repeat(integer) + "\n";
-    }
-  }
-  return str;
+  // let str = "";
+  // for (let i = 0; i < integer; i++) {
+  //   if (i === integer - 1) {
+  //     str += "+".repeat(integer);
+  //   } else {
+  //     str += "+".repeat(integer) + "\n";
+  //   }
+  // }
+  // return str;
+  return ("+".repeat(integer) + "\n").repeat(integer).trim();
 }
 
 console.log(generateShape(10));
