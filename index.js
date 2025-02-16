@@ -1955,4 +1955,16 @@ String.prototype.digit = function () {
   return /^[0-9]$/.test(this);
 };
 
-console.log("9".digit());
+function generateShape(integer) {
+  let str = "";
+  for (let i = 0; i < integer; i++) {
+    if (i === integer - 1) {
+      str += "+".repeat(integer);
+    } else {
+      str += "+".repeat(integer) + "\n";
+    }
+  }
+  return str;
+}
+
+console.log(generateShape(10));
