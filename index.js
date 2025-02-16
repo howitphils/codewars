@@ -1934,3 +1934,19 @@ function alphabetWar(fight) {
     ? "Left side wins!"
     : "Right side wins!";
 }
+
+function highestRank(arr) {
+  //Your Code logic should written here
+  let answer = 0;
+  let highestCount = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let count = arr.filter((n) => n === arr[i]).length;
+    if (count > highestCount) {
+      highestCount = count;
+      answer = arr[i];
+    } else if (count === highestCount && answer < arr[i]) {
+      answer = arr[i];
+    }
+  }
+  return answer;
+}
