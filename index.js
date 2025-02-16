@@ -1968,4 +1968,8 @@ function generateShape(integer) {
   return ("+".repeat(integer) + "\n").repeat(integer).trim();
 }
 
-console.log(generateShape(10));
+var isSquare = function (n) {
+  return n > 0 ? Math.sqrt(n) / Math.floor(Math.sqrt(n)) === 1 : n === 0; // fix me
+};
+
+console.log(isSquare(2221231));
