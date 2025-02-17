@@ -1991,4 +1991,21 @@ const orderedCount = function (text) {
   return answer;
 };
 
-console.log(orderedCount("asdqweadsczxqdsadq"));
+function sortMyString(S) {
+  // your code here
+  return S.split("")
+    .reduce(
+      (acc, curr, i) => {
+        if (i % 2 === 0) {
+          acc[0] += curr;
+        } else {
+          acc[1] += curr;
+        }
+        return acc;
+      },
+      ["", ""]
+    )
+    .join(" ");
+}
+
+console.log(sortMyString("zxcsadqwe"));
