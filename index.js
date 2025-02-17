@@ -1973,4 +1973,8 @@ var isSquare = function (n) {
   // return n > 0 ? Math.sqrt(n) / Math.floor(Math.sqrt(n)) === 1 : n === 0; // fix me
 };
 
-console.log(isSquare(0));
+var templateStrings = function (noun, adjective) {
+  return `${noun} are ${adjective}`;
+};
+
+console.log(templateStrings("asd", "dqwe"));
