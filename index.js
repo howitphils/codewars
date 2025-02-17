@@ -1977,4 +1977,18 @@ var templateStrings = function (noun, adjective) {
   return `${noun} are ${adjective}`;
 };
 
-console.log(templateStrings("asd", "dqwe"));
+const orderedCount = function (text) {
+  // Implement me!
+  const repeated = [];
+  const answer = [];
+  const strArr = text.split("");
+  for (let i = 0; i < strArr.length; i++) {
+    if (!repeated.includes(strArr[i])) {
+      answer.push([strArr[i], strArr.filter((l) => l === strArr[i]).length]);
+      repeated.push(strArr[i]);
+    }
+  }
+  return answer;
+};
+
+console.log(orderedCount("asdqweadsczxqdsadq"));
