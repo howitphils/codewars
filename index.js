@@ -2008,4 +2008,9 @@ function sortMyString(S) {
     .join(" ");
 }
 
-console.log(sortMyString("zxcsadqwe"));
+const reverse2 = function (array) {
+  // TODO: program me!
+  return array.map((l, i, arr) => arr[arr.length - (i + 1)]);
+};
+
+console.log(reverse2([1, 2, 3, 4, 5, 6]));
