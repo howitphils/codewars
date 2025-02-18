@@ -2013,4 +2013,9 @@ const reverse2 = function (array) {
   return array.map((l, i, arr) => arr[arr.length - (i + 1)]);
 };
 
-console.log(reverse2([1, 2, 3, 4, 5, 6]));
+function isDigit(s) {
+  //your code
+  return /^-?\d*\.?\d+$/.test(s);
+}
+
+console.log(isDigit("zxcd1"));
