@@ -2037,4 +2037,8 @@ function typeOfSum(a, b) {
   return typeof (a + b);
 }
 
-console.log(typeOfSum(20, 22js));
+function solve(arr) {
+  return arr.filter((n, i, arr) => i === arr.lastIndexOf(n));
+}
+
+console.log(solve([1, 2, 3, 4, 5, 22, 2, 2, 2, 2, 21, 1, 1, 1]));
