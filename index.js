@@ -2018,4 +2018,15 @@ function isDigit(s) {
   return /^-?\d*\.?\d+$/.test(s);
 }
 
-console.log(isDigit("zxcd1"));
+function cubeOdd(arr) {
+  // insert code here >.<
+  if (arr.find((item) => typeof item !== "number")) return undefined;
+  return arr.reduce((acc, curr) => {
+    if (curr % 2 === 1 || curr % 2 === -1) {
+      acc += Math.pow(curr, 3);
+    }
+    return acc;
+  }, 0);
+}
+
+console.log(cubeOdd([1, 2, 3, 4, -1]));
