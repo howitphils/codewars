@@ -2033,4 +2033,8 @@ function maxDiff(list) {
   return list.length ? Math.max(...list) - Math.min(...list) : 0;
 }
 
-console.log(maxDiff([1, 2, 3, 4, 5, 6, -20]));
+function typeOfSum(a, b) {
+  return typeof (a + b);
+}
+
+console.log(typeOfSum(20, 22js));
