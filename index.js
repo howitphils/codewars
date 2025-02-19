@@ -2066,4 +2066,12 @@ Array.prototype.odd = function () {
   return this.filter((a) => a % 2 === 1);
 };
 
-console.log(joinStrings("asd", "aaxzc"));
+function isPangram(string) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const regex = /[A-Za-z]/g;
+  const str = [...new Set(string.toLowerCase().match(regex))];
+  return str.length === alphabet.length;
+  //...
+}
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog."));
