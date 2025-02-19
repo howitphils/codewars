@@ -2046,4 +2046,24 @@ function joinStrings(string1, string2) {
   return `${string1} ${string2}`;
 }
 
+// TODO
+Array.prototype.square = function () {
+  return this.map((n) => n * n);
+};
+Array.prototype.cube = function () {
+  return this.map((n) => n * n * n);
+};
+Array.prototype.average = function () {
+  return this.reduce((acc, n) => acc + n, 0) / this.length || NaN;
+};
+Array.prototype.sum = function () {
+  return this.reduce((a, b) => a + b, 0);
+};
+Array.prototype.even = function () {
+  return this.filter((n) => n % 2 === 0);
+};
+Array.prototype.odd = function () {
+  return this.filter((a) => a % 2 === 1);
+};
+
 console.log(joinStrings("asd", "aaxzc"));
