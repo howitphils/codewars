@@ -2041,4 +2041,9 @@ function solve(arr) {
   return arr.filter((n, i, arr) => i === arr.lastIndexOf(n));
 }
 
-console.log(solve([1, 2, 3, 4, 5, 22, 2, 2, 2, 2, 21, 1, 1, 1]));
+function joinStrings(string1, string2) {
+  // code here
+  return `${string1} ${string2}`;
+}
+
+console.log(joinStrings("asd", "aaxzc"));
