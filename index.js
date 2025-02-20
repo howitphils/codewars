@@ -2078,4 +2078,14 @@ function first(arr, n = 1) {
   return arr.slice(0, n);
 }
 
-console.log(first([1, 2, 3, 4], 3));
+function tidyNumber(n) {
+  //your code here
+  return (
+    String(n)
+      .split("")
+      .sort((a, b) => a - b)
+      .join("") === String(n)
+  );
+}
+
+console.log(tidyNumber(1222314));
