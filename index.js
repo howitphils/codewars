@@ -2088,4 +2088,9 @@ function tidyNumber(n) {
   );
 }
 
-console.log(tidyNumber(1222314));
+function getASCII(c) {
+  // ...
+  return c.charCodeAt();
+}
+
+console.log(getASCII("d"));
