@@ -2093,4 +2093,12 @@ function getASCII(c) {
   return c.charCodeAt();
 }
 
-console.log(getASCII("d"));
+function findDigit(num, nth) {
+  return nth > 0
+    ? +String(num > 0 ? num : Math.abs(num))
+        .split("")
+        .reverse()[nth - 1] || 0
+    : -1;
+}
+
+console.log(findDigit(2432421123, 7));
