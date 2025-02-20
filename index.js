@@ -2102,21 +2102,25 @@ function findDigit(num, nth) {
 }
 
 function dashatize(num) {
+  // return String(num)
+  //   .split("")
+  //   .map((n, i, arr) => {
+  //     if (n % 2 === 1) {
+  //       if (arr[i + 1] % 2 === 1) {
+  //         return `-${n}`;
+  //       } else {
+  //         return `-${n}-`;
+  //       }
+  //     } else {
+  //       return n;
+  //     }
+  //   })
+  //   .join("")
+  //   .replace(/^-|-$/g, "");
   return String(num)
-    .split("")
-    .map((n, i, arr) => {
-      if (n % 2 === 1) {
-        if (arr[i + 1] % 2 === 1) {
-          return `-${n}`;
-        } else {
-          return `-${n}-`;
-        }
-      } else {
-        return n;
-      }
-    })
-    .join("")
-    .replace(/^-+|-+$/g, "");
+    .replace(/([13579])/g, "-$1-")
+    .replaceAll(/--+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 console.log(dashatize(325123));
