@@ -2101,4 +2101,22 @@ function findDigit(num, nth) {
     : -1;
 }
 
-console.log(findDigit(2432421123, 7));
+function dashatize(num) {
+  return String(num)
+    .split("")
+    .map((n, i, arr) => {
+      if (n % 2 === 1) {
+        if (arr[i + 1] % 2 === 1) {
+          return `-${n}`;
+        } else {
+          return `-${n}-`;
+        }
+      } else {
+        return n;
+      }
+    })
+    .join("")
+    .replace(/^-+|-+$/g, "");
+}
+
+console.log(dashatize(325123));
