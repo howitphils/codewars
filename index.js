@@ -2147,4 +2147,10 @@ function sortGiftCode(code) {
   return code.split("").sort().join("");
 }
 
-console.log(sortGiftCode("dasdvxcvx"));
+function add(n) {
+  return (a) => {
+    return a + n;
+  };
+}
+
+console.log(add(5)(10));
