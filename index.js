@@ -2153,4 +2153,10 @@ function add(n) {
   };
 }
 
-console.log(add(5)(10));
+function isPythagoreanTriple(integers) {
+  // Good luck friends!
+  const sorted = integers.sort((a, b) => a - b);
+  return sorted[0] ** 2 + sorted[1] ** 2 === sorted[2] ** 2;
+}
+
+console.log(isPythagoreanTriple([20, 30, 1]));
