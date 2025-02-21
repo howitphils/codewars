@@ -2142,4 +2142,9 @@ function solve(s) {
   return arr;
 }
 
-console.log(solve("aszxc@adsADSDa%#"));
+function sortGiftCode(code) {
+  //TODO
+  return code.split("").sort().join("");
+}
+
+console.log(sortGiftCode("dasdvxcvx"));
