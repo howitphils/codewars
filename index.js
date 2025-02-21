@@ -2166,5 +2166,7 @@ function maxProduct(numbers, size) {
     .slice(0, size)
     .reduce((a, b) => a * b);
 }
+// Write a function "greet" that returns "hello world!"
+const greet2 = () => "hello world!";
 
-console.log(maxProduct([20, 3, 10, 44], 2));
+console.log(greet2());
