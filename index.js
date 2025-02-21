@@ -2123,4 +2123,23 @@ function dashatize(num) {
     .replace(/^-|-$/g, "");
 }
 
-console.log(dashatize(325123));
+function solve(s) {
+  //..
+  let arr = [0, 0, 0, 0];
+
+  s.split("").forEach((l) => {
+    if (/[A-Z]/.test(l)) {
+      arr[0] += 1;
+    } else if (/[a-z]/.test(l)) {
+      arr[1] += 1;
+    } else if (/[0-9]/.test(l)) {
+      arr[2] += 1;
+    } else {
+      arr[3] += 1;
+    }
+  });
+
+  return arr;
+}
+
+console.log(solve("aszxc@adsADSDa%#"));
