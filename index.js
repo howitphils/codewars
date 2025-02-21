@@ -2159,4 +2159,12 @@ function isPythagoreanTriple(integers) {
   return sorted[0] ** 2 + sorted[1] ** 2 === sorted[2] ** 2;
 }
 
-console.log(isPythagoreanTriple([20, 30, 1]));
+function maxProduct(numbers, size) {
+  //your code here
+  return numbers
+    .sort((a, b) => b - a)
+    .slice(0, size)
+    .reduce((a, b) => a * b);
+}
+
+console.log(maxProduct([20, 3, 10, 44], 2));
