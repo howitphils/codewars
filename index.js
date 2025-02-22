@@ -2192,4 +2192,4 @@ function kebabize(str) {
     .join("");
 }
 
-console.log(kebabize("xcSAD212edsad"));
+console.log(kebabize("XcSAD212edsad"));
