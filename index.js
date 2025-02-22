@@ -2169,4 +2169,8 @@ function maxProduct(numbers, size) {
 // Write a function "greet" that returns "hello world!"
 const greet2 = () => "hello world!";
 
-console.log(greet2());
+function toNumberArray(stringarray) {
+  return stringarray.map(Number);
+}
+
+console.log(toNumberArray(["1", "2"]));
