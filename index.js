@@ -2173,4 +2173,23 @@ function toNumberArray(stringarray) {
   return stringarray.map(Number);
 }
 
-console.log(toNumberArray(["1", "2"]));
+function kebabize(str) {
+  // TODO
+  return str
+    .replace(/[0-9]/g, "")
+    .split("")
+    .map((l, i) => {
+      if (l.toUpperCase() === l) {
+        if (i === 0) {
+          return l.toLowerCase();
+        } else {
+          return `-${l.toLowerCase()}`;
+        }
+      } else {
+        return l;
+      }
+    })
+    .join("");
+}
+
+console.log(kebabize("xcSAD212edsad"));
