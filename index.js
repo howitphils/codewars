@@ -2175,21 +2175,26 @@ function toNumberArray(stringarray) {
 
 function kebabize(str) {
   // TODO
+  // return str
+  //   .replace(/[0-9]/g, "")
+  //   .split("")
+  //   .map((l, i) => {
+  //     if (l.toUpperCase() === l) {
+  //       if (i === 0) {
+  //         return l.toLowerCase();
+  //       } else {
+  //         return `-${l.toLowerCase()}`;
+  //       }
+  //     } else {
+  //       return l;
+  //     }
+  //   })
+  //   .join("");
+
   return str
-    .replace(/[0-9]/g, "")
-    .split("")
-    .map((l, i) => {
-      if (l.toUpperCase() === l) {
-        if (i === 0) {
-          return l.toLowerCase();
-        } else {
-          return `-${l.toLowerCase()}`;
-        }
-      } else {
-        return l;
-      }
-    })
-    .join("");
+    .replace(/^[A-Z]/, (c) => c.toLowerCase())
+    .replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`)
+    .replace(/^-/, "");
 }
 
 console.log(kebabize("XcSAD212edsad"));
