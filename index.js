@@ -2201,4 +2201,18 @@ function automorphic(n) {
   return String(n * n).endsWith(String(n)) ? "Automorphic" : "Not!!"; // your code here
 }
 
-console.log(automorphic(25));
+function menFromBoys(arr) {
+  //your code here
+  const even = [
+    ...new Set(arr.filter((n) => n % 2 === 0).sort((a, b) => a - b)),
+  ];
+  const odd = [
+    ...new Set(
+      arr.filter((n) => n % 2 === 1 || n % 2 === -1).sort((a, b) => b - a)
+    ),
+  ];
+
+  return even.concat(odd);
+}
+
+console.log(menFromBoys([-32, -35, -39, -41]));
