@@ -2215,4 +2215,10 @@ function menFromBoys(arr) {
   return even.concat(odd);
 }
 
-console.log(menFromBoys([-32, -35, -39, -41]));
+function min(arr, toReturn) {
+  return toReturn === "value"
+    ? Math.min(...arr)
+    : arr.indexOf(Math.min(...arr));
+}
+
+console.log(min([22, 10, 2, 33, 0], "index"));
