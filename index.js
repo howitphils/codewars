@@ -2197,4 +2197,8 @@ function kebabize(str) {
     .replace(/^-/, "");
 }
 
-console.log(kebabize("XcSAD212edsad"));
+function automorphic(n) {
+  return String(n * n).endsWith(String(n)) ? "Automorphic" : "Not!!"; // your code here
+}
+
+console.log(automorphic(25));
