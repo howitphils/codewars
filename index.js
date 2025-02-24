@@ -2221,4 +2221,14 @@ function min(arr, toReturn) {
     : arr.indexOf(Math.min(...arr));
 }
 
-console.log(min([22, 10, 2, 33, 0], "index"));
+function uniTotal(string) {
+  // total up dem unicodes!
+  return string.length
+    ? string
+        .split("")
+        .map((l) => l.charCodeAt())
+        .reduce((a, b) => a + b)
+    : 0;
+}
+
+console.log(uniTotal("czxc"));
