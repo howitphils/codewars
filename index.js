@@ -2231,4 +2231,11 @@ function uniTotal(string) {
     : 0;
 }
 
+function Sleigh() {}
+
+Sleigh.prototype.authenticate = function (name, password) {
+  // TODO
+  return name === "Santa Claus" && password === "Ho Ho Ho!";
+};
+
 console.log(uniTotal("czxc"));
