@@ -2274,4 +2274,15 @@ function switchItUp(number) {
   }
 }
 
-console.log(switchItUp(9));
+function evenNumbers(array, number) {
+  const reversed = array.reverse();
+  let answ = [];
+  reversed.forEach((n) => {
+    if (answ.length < number && n % 2 === 0) {
+      answ.push(n);
+    }
+  });
+  return answ.reverse();
+}
+
+console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8], 2));
