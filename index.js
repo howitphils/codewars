@@ -2313,4 +2313,13 @@ function parseF(s) {
   return parseFloat(s) === 0 ? 0 : parseFloat(s) || null;
 }
 
-console.log(parseF("0"));
+function vaporcode(string) {
+  return string
+    .replace(/[ ]/g, "")
+    .split("")
+    .map((l) => `${l.toUpperCase()}  `)
+    .join("")
+    .trimEnd();
+}
+
+console.log(vaporcode("daszxc zxcsad zxcasd asd a  qwd"));
