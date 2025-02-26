@@ -2309,4 +2309,8 @@ function aliasGen(first, last) {
   );
 }
 
-console.log(leo(88));
+function parseF(s) {
+  return parseFloat(s) === 0 ? 0 : parseFloat(s) || null;
+}
+
+console.log(parseF("0"));
