@@ -2383,4 +2383,13 @@ function correctPolishLetters(string) {
     .join("");
 }
 
-console.log(correctPolishLetters("Jędrzej Błądziński"));
+function toFreud(string) {
+  return string
+    ? string
+        .split(" ")
+        .map((word) => "sex")
+        .join(" ")
+    : "";
+}
+
+console.log(toFreud("asdasdqwe qwesad qweasd asdxzc"));
