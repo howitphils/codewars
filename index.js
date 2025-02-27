@@ -2365,4 +2365,22 @@ function oper(fct, s) {
   return fct(s);
 }
 
-console.log(oper(vertMirror, "asdasd\nasdasd\nasdasd"));
+function correctPolishLetters(string) {
+  const obj = {
+    ą: "a",
+    ć: "c",
+    ę: "e",
+    ł: "l",
+    ń: "n",
+    ó: "o",
+    ś: "s",
+    ź: "z",
+    ż: "z",
+  };
+  return string
+    .split("")
+    .map((l) => (obj[l] ? obj[l] : l))
+    .join("");
+}
+
+console.log(correctPolishLetters("Jędrzej Błądziński"));
