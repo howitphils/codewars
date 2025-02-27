@@ -2332,4 +2332,22 @@ function Hero(name = "Hero") {
 }
 const newHero = new Hero("Adrian");
 
+var rooms = {
+  1: {
+    name: "hi",
+    description: "adsa",
+    completed: false,
+  },
+  2: {
+    name: "hi",
+    description: "adsa",
+    completed: false,
+  },
+  3: {
+    name: "hi",
+    description: "adsa",
+    completed: false,
+  },
+};
+
 console.log(newHero.position);
