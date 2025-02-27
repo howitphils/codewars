@@ -2350,4 +2350,19 @@ var rooms = {
   },
 };
 
-console.log(newHero.position);
+function vertMirror(strng) {
+  return strng
+    .split("\n")
+    .map((word) => word.split("").reverse().join(""))
+    .join("\n");
+  // Your code
+}
+function horMirror(strng) {
+  // Your code
+  return strng.split("\n").reverse().join("\n");
+}
+function oper(fct, s) {
+  return fct(s);
+}
+
+console.log(oper(vertMirror, "asdasd\nasdasd\nasdasd"));
