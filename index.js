@@ -2392,4 +2392,19 @@ function toFreud(string) {
     : "";
 }
 
-console.log(toFreud("asdasdqwe qwesad qweasd asdxzc"));
+function calculateAge(birth, relation) {
+  // enter your code here.
+  if (relation - birth === 1) {
+    return "You are 1 year old.";
+  } else if (relation - birth > 1) {
+    return `You are ${relation - birth} years old.`;
+  } else if (relation - birth === 0) {
+    return "You were born this very year!";
+  } else if (relation - birth === -1) {
+    return "You will be born in 1 year.";
+  } else if (relation - birth < 0) {
+    return `You will be born in ${Math.abs(relation - birth)} years.`;
+  }
+}
+
+console.log(calculateAge(2002, 2000));
