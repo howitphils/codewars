@@ -2407,4 +2407,11 @@ function calculateAge(birth, relation) {
   }
 }
 
-console.log(calculateAge(2002, 2000));
+function capitalize(s, arr) {
+  return s
+    .split("")
+    .map((l, i) => (arr.includes(i) ? l.toUpperCase() : l))
+    .join("");
+}
+
+console.log(capitalize("aasdqweasd", [2, 3, 5, 6]));
