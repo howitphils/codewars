@@ -2458,4 +2458,27 @@ function pickIt(arr) {
   return [odd, even];
 }
 
-console.log(pickIt([1, 2, 3, 4, 5, 6, 7]));
+function calculate(num1, operation, num2) {
+  //TODO: make a basic calculator.
+  switch (operation) {
+    case "+": {
+      return num1 + num2;
+    }
+    case "-": {
+      return num1 - num2;
+    }
+    case "/": {
+      if (num2 === 0) return null;
+      return num1 / num2;
+    }
+    case "*": {
+      return num1 * num2;
+    }
+
+    default: {
+      return null;
+    }
+  }
+}
+
+console.log(calculate(4, "/", 1));
