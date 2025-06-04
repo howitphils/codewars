@@ -2421,23 +2421,33 @@ function plural(n) {
 
 function isPowerOfTwo(n) {
   //.. should return true or false ..
-  if (n === 0) {
+  // if (n === 0) {
+  //   return false;
+  // }
+
+  // let result = 0;
+  // let answ = false;
+  // let i = 0;
+
+  // while (result <= n) {
+  //   if (result === n) {
+  //     answ = true;
+  //   }
+  //   result = Math.pow(2, i);
+  //   i += 1;
+  // }
+
+  // return answ;
+
+  if (n === 1) {
+    return true;
+  }
+
+  if (n < 1) {
     return false;
   }
 
-  let result = 0;
-  let answ = false;
-  let i = 0;
-
-  while (result <= n) {
-    if (result === n) {
-      answ = true;
-    }
-    result = Math.pow(2, i);
-    i += 1;
-  }
-
-  return answ;
+  return isPowerOfTwo(n / 2);
 }
 
 console.log(isPowerOfTwo(524288));
