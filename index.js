@@ -2481,4 +2481,25 @@ function calculate(num1, operation, num2) {
   }
 }
 
-console.log(calculate(4, "/", 1));
+function upArray(arr) {
+  if (!arr.length) {
+    return null;
+  }
+
+  if (arr.find((n) => n < 0 || n > 9)) {
+    return null;
+  }
+
+  let last = arr[arr.length - 1];
+
+  if (last === 9) {
+    const spliced = arr.splice(-1, 2);
+    const num = Number(arr.join("")) + 1;
+    return num.toString().split("").map(Number);
+  } else {
+    arr[arr.length - 1] = last + 1;
+    return arr;
+  }
+}
+
+console.log(upArray([0, 5, 0]));
