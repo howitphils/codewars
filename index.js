@@ -2419,4 +2419,25 @@ function plural(n) {
   // ...
 }
 
-console.log(plural(2));
+function isPowerOfTwo(n) {
+  //.. should return true or false ..
+  if (n === 0) {
+    return false;
+  }
+
+  let result = 0;
+  let answ = false;
+  let i = 0;
+
+  while (result <= n) {
+    if (result === n) {
+      answ = true;
+    }
+    result = Math.pow(2, i);
+    i += 1;
+  }
+
+  return answ;
+}
+
+console.log(isPowerOfTwo(524288));
