@@ -2450,4 +2450,12 @@ function isPowerOfTwo(n) {
   return isPowerOfTwo(n / 2);
 }
 
-console.log(isPowerOfTwo(524288));
+function pickIt(arr) {
+  const odd = arr.filter((n) => n % 2 !== 0);
+  const even = arr.filter((n) => n % 2 === 0);
+  //coding here
+
+  return [odd, even];
+}
+
+console.log(pickIt([1, 2, 3, 4, 5, 6, 7]));
