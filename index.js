@@ -2414,4 +2414,9 @@ function capitalize(s, arr) {
     .join("");
 }
 
-console.log(capitalize("aasdqweasd", [2, 3, 5, 6]));
+function plural(n) {
+  return n !== 1;
+  // ...
+}
+
+console.log(plural(2));
