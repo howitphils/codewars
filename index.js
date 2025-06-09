@@ -2502,4 +2502,14 @@ function upArray(arr) {
   }
 }
 
-console.log(upArray([0, 5, 0]));
+function uefaEuro2016(teams, scores) {
+  // your code...
+  if (scores[0] === scores[1]) {
+    return `At match ${[teams[0]]} - ${teams[1]}, teams played draw.`;
+  }
+  return `At match ${[teams[0]]} - ${teams[1]}, ${
+    scores[0] > scores[1] ? teams[0] : teams[1]
+  } won!`;
+}
+
+console.log(uefaEuro2016(["Germany", "Italy"], [2, 2]));
