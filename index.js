@@ -2546,16 +2546,15 @@ var number = function (busStops) {
   return busStops.reduce((acc, curr) => (acc += curr[0] - curr[1]), 0);
 };
 
-console.log(
-  number([
-    [3, 0],
-    [9, 1],
-    [4, 10],
-    [12, 2],
-    [6, 1],
-    [7, 10],
-  ])
-);
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  // Your code here.
+  const blueRes = blueStart - bluePulled;
+  const redRes = redStart - redPulled;
+
+  return blueRes / (blueRes + redRes);
+}
+
+console.log(guessBlue(12, 18, 4, 6)); // 0.4
 
 // console.log(
 //   meeting(
