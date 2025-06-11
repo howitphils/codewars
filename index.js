@@ -2522,6 +2522,10 @@ function meeting(s) {
     .join("");
 }
 
+function angle(n) {
+  return 180 * (n - 2);
+}
+
 console.log(
   meeting(
     "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill"
