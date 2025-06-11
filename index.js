@@ -2542,7 +2542,20 @@ function arrayLeaders(numbers) {
   return answ;
 }
 
-console.log(arrayLeaders([16, 17, 4, 3, 5, 2]));
+var number = function (busStops) {
+  return busStops.reduce((acc, curr) => (acc += curr[0] - curr[1]), 0);
+};
+
+console.log(
+  number([
+    [3, 0],
+    [9, 1],
+    [4, 10],
+    [12, 2],
+    [6, 1],
+    [7, 10],
+  ])
+);
 
 // console.log(
 //   meeting(
