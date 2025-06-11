@@ -2518,7 +2518,7 @@ function meeting(s) {
     .map((str) => str.split(":").reverse())
     .sort()
     .map((arr) => arr.join(", "))
-    .map((str) => `(${str})`)
+    .map((str) => `(${str.toUpperCase()})`)
     .join("");
 }
 
@@ -2526,8 +2526,26 @@ function angle(n) {
   return 180 * (n - 2);
 }
 
-console.log(
-  meeting(
-    "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill"
-  )
-);
+function arrayLeaders(numbers) {
+  const answ = [];
+  for (let i = 0; i < numbers.length; i++) {
+    const el = numbers[i];
+    let sum = 0;
+    for (let j = i + 1; j < numbers.length; j++) {
+      sum += numbers[j];
+    }
+    if (el > sum) {
+      answ.push(el);
+    }
+  }
+
+  return answ;
+}
+
+console.log(arrayLeaders([16, 17, 4, 3, 5, 2]));
+
+// console.log(
+//   meeting(
+//     "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill"
+//   )
+// );
