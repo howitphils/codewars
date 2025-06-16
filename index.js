@@ -2554,10 +2554,19 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
   return blueRes / (blueRes + redRes);
 }
 
-console.log(guessBlue(12, 18, 4, 6)); // 0.4
-
 // console.log(
 //   meeting(
 //     "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill"
 //   )
 // );
+
+function solution(value) {
+  //...
+  while (value.toString().length < 5) {
+    value = "0" + value;
+  }
+
+  return `Value is ${value}`;
+}
+
+console.log(solution(1222));
