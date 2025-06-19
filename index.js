@@ -2561,12 +2561,59 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
 // );
 
 function solution(value) {
-  //...
-  while (value.toString().length < 5) {
-    value = "0" + value;
-  }
-
-  return `Value is ${value}`;
+  // //...
+  // while (value.toString().length < 5) {
+  //   value = "0" + value;
+  // }
+  // return `Value is ${value}`;
+  // return `Value is ${("00000" + value).slice(-5)}`;
+  return `Value is ${value.toString().padStart()}`;
 }
 
-console.log(solution(1222));
+function balancedNum(number) {
+  const str = number.toString();
+  // let sum1 = 0;
+  // let sum2 = 0;
+
+  // if (str.length === 1) {
+  //   return "Balanced";
+  // }
+
+  // if (str.length % 2 === 0) {
+  //   sum1 = str
+  //     .split("")
+  //     .splice(0, str.length / 2 - 1)
+  //     .map(Number)
+  //     .reduce((acc, curr) => acc + curr);
+  //   sum2 = str
+  //     .split("")
+  //     .splice(str.length / 2)
+  //     .map(Number)
+  //     .reduce((acc, curr) => acc + curr);
+  // } else {
+  //   sum1 = str
+  //     .split("")
+  //     .splice(0, str.length / 2)
+  //     .map(Number)
+  //     .reduce((acc, curr) => acc + curr);
+  //   sum2 = str
+  //     .split("")
+  //     .splice(str.length / 2 + 1)
+  //     .map(Number)
+  //     .reduce((acc, curr) => acc + curr);
+  // }
+
+  // return sum1 === sum2 ? "Balanced" : "Not Balanced";
+  // return { sum1, sum2 };
+  // return str.length;
+
+  return;
+}
+
+function validateCode(code) {
+  //your code here
+  const str = code.toString();
+  return str.startsWith("1") || str.startsWith("2") || str.startsWith("3");
+}
+
+console.log(balancedNum(123));
