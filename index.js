@@ -2616,4 +2616,15 @@ function validateCode(code) {
   return str.startsWith("1") || str.startsWith("2") || str.startsWith("3");
 }
 
-console.log(balancedNum(123));
+function evil(n) {
+  return n
+    .toString(2)
+    .split("")
+    .filter((n) => n === "1").length %
+    2 ===
+    0
+    ? "It's Evil!"
+    : "It's Odious!";
+}
+
+console.log(evil(1));
