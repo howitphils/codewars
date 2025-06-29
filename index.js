@@ -2634,4 +2634,6 @@ let Ghost = function () {
   this.color = colors[random];
 };
 
-console.log(new Ghost().color);
+function evaporator(content, evapPerDay, threshold) {}
+
+console.log(evaporator(10, 10, 5));
