@@ -2627,4 +2627,11 @@ function evil(n) {
     : "It's Odious!";
 }
 
-console.log(evil(1));
+let Ghost = function () {
+  // your code goes here
+  const colors = ["white", "yellow", "purple", "red"];
+  const random = Math.floor(Math.random() * 4);
+  this.color = colors[random];
+};
+
+console.log(new Ghost().color);
