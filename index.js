@@ -2638,12 +2638,14 @@ function evaporator(content, evapPerDay, threshold) {}
 
 function vowel2index(str) {
   //code me
-  const vowels = ["a", "e", "i", "o", "u"];
+  // const vowels = ["a", "e", "i", "o", "u"];
 
-  return str
-    .split("")
-    .map((l, i) => (vowels.includes(l) ? i + 1 : l))
-    .join("");
+  // return str
+  //   .split("")
+  //   .map((l, i) => (vowels.includes(l) ? i + 1 : l))
+  //   .join("");
+
+  return str.replace(/[aeiou]/gi, (m, i) => i + 1);
 }
 
 console.log(vowel2index("this is my string"));
