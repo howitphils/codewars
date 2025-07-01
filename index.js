@@ -2636,4 +2636,14 @@ let Ghost = function () {
 
 function evaporator(content, evapPerDay, threshold) {}
 
-console.log(evaporator(10, 10, 5));
+function vowel2index(str) {
+  //code me
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  return str
+    .split("")
+    .map((l, i) => (vowels.includes(l) ? i + 1 : l))
+    .join("");
+}
+
+console.log(vowel2index("this is my string"));
